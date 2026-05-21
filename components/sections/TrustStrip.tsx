@@ -1,3 +1,4 @@
+"use client";
 // TrustStrip section
 export default function TrustStrip() {
   const stats = [

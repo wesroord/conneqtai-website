@@ -1,3 +1,4 @@
+"use client";
 const footerLinks = {
   Solutions: [
     "AI Chatbots",
