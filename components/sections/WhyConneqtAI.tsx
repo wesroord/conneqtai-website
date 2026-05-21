@@ -1,4 +1,3 @@
-"use client";
 // Why ConneqtAI section
 const metrics = [
   {
