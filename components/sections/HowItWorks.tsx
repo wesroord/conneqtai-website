@@ -1,133 +1,22 @@
-const steps = [
-  {
-    num: "01",
-    title: "Strategy",
-    desc: "We audit your workflows, identify automation opportunities and design the AI architecture that fits your exact business needs.",
-  },
-  {
-    num: "02",
-    title: "Development",
-    desc: "Our team builds your custom AI system — trained on your data, tuned to your brand voice, tested for real-world performance.",
-  },
-  {
-    num: "03",
-    title: "Integration",
-    desc: "We connect the AI to your existing tools — website, CRM, WhatsApp, email, Slack — so it plugs seamlessly into how you work.",
-  },
-  {
-    num: "04",
-    title: "Optimisation",
-    desc: "Ongoing monitoring, performance tuning and updates — so your AI system keeps improving and delivering value over time.",
-  },
-];
-
 export default function HowItWorks() {
+  const steps = [
+    { num: "01", title: "Strategy", desc: "We analyse your workflows and design the AI architecture that fits your exact business needs." },
+    { num: "02", title: "Development", desc: "Custom AI built on your data, tuned to your brand voice, tested for real-world performance." },
+    { num: "03", title: "Integration", desc: "Connected to your website, CRM, WhatsApp, email and all your existing tools." },
+    { num: "04", title: "Optimisation", desc: "Ongoing monitoring and updates — your AI system keeps improving and delivering value." },
+  ];
   return (
-    <section
-      id="how-it-works"
-      style={{ padding: "6rem 2rem", background: "#0a0a10" }}
-    >
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <span
-          style={{
-            fontSize: "0.75rem",
-            fontWeight: 600,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-            color: "#7b8cff",
-            display: "block",
-            marginBottom: "1rem",
-          }}
-        >
-          The Process
-        </span>
-        <h2
-          style={{
-            fontFamily: "Syne, sans-serif",
-            fontSize: "clamp(2rem, 4vw, 3rem)",
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.15,
-            marginBottom: "1.25rem",
-            color: "#f0f0f8",
-          }}
-        >
-          From strategy to
-          <br />
-          live AI system in weeks
-        </h2>
-        <p
-          style={{
-            fontSize: "1.05rem",
-            color: "rgba(240,240,248,0.55)",
-            maxWidth: 560,
-            lineHeight: 1.7,
-            marginBottom: "3.5rem",
-          }}
-        >
-          A proven 4-step process that takes your business from idea to
-          production-ready AI — fast.
-        </p>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "1.5rem",
-          }}
-        >
-          {steps.map((step) => (
-            <div
-              key={step.num}
-              style={{
-                padding: "2rem 1.75rem",
-                border: "1px solid rgba(255,255,255,0.08)",
-                borderRadius: "16px",
-                background: "rgba(255,255,255,0.02)",
-                transition: "border-color 0.3s",
-              }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.borderColor = "rgba(108,99,255,0.3)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)")
-              }
-            >
-              <div
-                style={{
-                  fontFamily: "Syne, sans-serif",
-                  fontSize: "3rem",
-                  fontWeight: 800,
-                  lineHeight: 1,
-                  marginBottom: "1rem",
-                  background:
-                    "linear-gradient(135deg, rgba(108,99,255,0.6), rgba(108,99,255,0.1))",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                }}
-              >
-                {step.num}
-              </div>
-              <div
-                style={{
-                  fontFamily: "Syne, sans-serif",
-                  fontSize: "1.1rem",
-                  fontWeight: 700,
-                  marginBottom: "0.5rem",
-                  color: "#f0f0f8",
-                }}
-              >
-                {step.title}
-              </div>
-              <div
-                style={{
-                  fontSize: "0.875rem",
-                  color: "rgba(240,240,248,0.55)",
-                  lineHeight: 1.65,
-                }}
-              >
-                {step.desc}
-              </div>
+    <section id="how-it-works" style={{padding:"5rem 1.5rem",background:"rgba(255,255,255,0.012)"}}>
+      <div style={{maxWidth:1100,margin:"0 auto"}}>
+        <span style={{fontSize:"0.72rem",fontWeight:600,letterSpacing:"0.12em",textTransform:"uppercase",color:"#a89cff",display:"block",marginBottom:"0.875rem"}}>The Process</span>
+        <h2 style={{fontFamily:"sans-serif",fontSize:"clamp(1.8rem,4vw,2.8rem)",fontWeight:800,letterSpacing:"-0.02em",lineHeight:1.12,marginBottom:"1rem",color:"#f0f0f8"}}>From strategy to live<br/>AI system in weeks</h2>
+        <p style={{fontSize:"1rem",color:"rgba(240,240,248,0.5)",maxWidth:500,lineHeight:1.7,marginBottom:"3rem"}}>A proven 4-step process that takes your business from idea to production-ready AI — fast.</p>
+        <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,220px),1fr))",gap:"1rem"}}>
+          {steps.map(s=>(
+            <div key={s.num} style={{padding:"1.75rem",border:"1px solid rgba(255,255,255,0.07)",borderRadius:"16px",background:"rgba(255,255,255,0.02)"}}>
+              <div style={{fontFamily:"sans-serif",fontSize:"2.5rem",fontWeight:800,color:"rgba(108,99,255,0.6)",marginBottom:"0.875rem",lineHeight:1}}>{s.num}</div>
+              <div style={{fontFamily:"sans-serif",fontSize:"1rem",fontWeight:700,marginBottom:"0.5rem",color:"#f0f0f8"}}>{s.title}</div>
+              <div style={{fontSize:"0.875rem",color:"rgba(240,240,248,0.5)",lineHeight:1.65}}>{s.desc}</div>
             </div>
           ))}
         </div>
