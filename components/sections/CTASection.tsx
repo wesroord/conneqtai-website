@@ -4,7 +4,7 @@ export default function CTASection(){
   const ref=useRef<HTMLCanvasElement>(null);
   useEffect(()=>{
     const C=ref.current; if(!C)return;
-    const ctx=C.getContext("2d"); if(!ctx)return;
+    const ctx=C.getContext("2d")!;
     const pr=C.parentElement?.getBoundingClientRect();
     C.width=pr?.width||380; C.height=pr?.height||300;
     const cols=["255,0,170","119,0,255","0,170,255"];
