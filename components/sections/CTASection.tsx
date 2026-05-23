@@ -4,15 +4,21 @@ export default function CTASection(){
   const ref=useRef<HTMLCanvasElement>(null);
   useEffect(()=>{
     const C=ref.current; if(!C)return;
-    const cx=C.getContext("2d"); if(!cx)return;
-    const r=C.parentElement?.getBoundingClientRect();
-    C.width=r?.width||380; C.height=r?.height||300;
+    const ctx=C.getContext("2d"); if(!ctx)return;
+    const pr=C.parentElement?.getBoundingClientRect();
+    C.width=pr?.width||380; C.height=pr?.height||300;
     const cols=["255,0,170","119,0,255","0,170,255"];
     const rings=[0,.28,.56].map((d,i)=>({p:-d,col:cols[i]}));
     let raf:number;
     function frame(){
-      cx.clearRect(0,0,C.width,C.height);
-      rings.forEach((rg:any)=>{rg.p+=.0035;if(rg.p>1)rg.p=0;if(rg.p<0)return;const R=rg.p*Math.min(C.width,C.height)*.72;cx.beginPath();cx.arc(C.width/2,C.height/2,R,0,Math.PI*2);cx.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";cx.lineWidth=1;cx.stroke();});
+      ctx.clearRect(0,0,C.width,C.height);
+      rings.forEach((rg:any)=>{
+        rg.p+=.0035;if(rg.p>1)rg.p=0;if(rg.p<0)return;
+        const rv=rg.p*Math.min(C.width,C.height)*.72;
+        ctx.beginPath();ctx.arc(C.width/2,C.height/2,rv,0,Math.PI*2);
+        ctx.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";
+        ctx.lineWidth=1;ctx.stroke();
+      });
       raf=requestAnimationFrame(frame);
     }
     frame(); return()=>cancelAnimationFrame(raf);
