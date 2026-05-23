@@ -3,19 +3,20 @@ import { useEffect, useRef } from "react";
 export default function CTASection(){
   const ref=useRef<HTMLCanvasElement>(null);
   useEffect(()=>{
-    const C=ref.current; if(!C)return;
-    const ctx=C.getContext("2d")!;
-    const pr=C.parentElement?.getBoundingClientRect();
-    C.width=pr?.width||380; C.height=pr?.height||300;
+    const el=ref.current; if(!el)return;
+    const ctx=el.getContext("2d")!;
+    const pr=el.parentElement?.getBoundingClientRect();
+    el.width=pr?.width||380; el.height=pr?.height||300;
+    const W=el.width, H=el.height;
     const cols=["255,0,170","119,0,255","0,170,255"];
     const rings=[{p:0,col:cols[0]},{p:-.28,col:cols[1]},{p:-.56,col:cols[2]}];
     let raf=0;
     function frame(){
-      ctx.clearRect(0,0,C.width,C.height);
+      ctx.clearRect(0,0,W,H);
       rings.forEach((rg)=>{
         rg.p+=.0035;if(rg.p>1)rg.p=0;if(rg.p<0)return;
-        const rv=rg.p*Math.min(C.width,C.height)*.72;
-        ctx.beginPath();ctx.arc(C.width/2,C.height/2,rv,0,Math.PI*2);
+        const rv=rg.p*Math.min(W,H)*.72;
+        ctx.beginPath();ctx.arc(W/2,H/2,rv,0,Math.PI*2);
         ctx.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";
         ctx.lineWidth=1;ctx.stroke();
       });
