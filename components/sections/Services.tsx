@@ -1,174 +1,93 @@
-"use client";
-import { useState } from "react";
-
 const services = [
   {
     icon: "🤖",
     title: "AI Chatbots",
-    desc: "Smart, branded chatbots that handle customer queries, qualify leads and convert visitors — 24/7, without human intervention.",
-  },
-  {
-    icon: "⚡",
-    title: "AI Agents",
-    desc: "Autonomous AI agents that reason, plan and execute multi-step tasks across your business tools and data sources.",
+    desc: "Smart, branded chatbots that engage visitors, answer questions and convert leads — automatically, around the clock.",
+    tags: ["24/7 availability", "Lead capture", "Custom trained"],
   },
   {
     icon: "🎯",
     title: "AI Customer Support",
-    desc: "Intelligent support systems that resolve tickets, answer FAQs and escalate complex issues — reducing support costs dramatically.",
+    desc: "Resolve tickets, answer FAQs and handle customer queries at scale — without adding headcount.",
+    tags: ["Instant replies", "CRM sync", "Auto-escalation"],
   },
   {
     icon: "🔄",
     title: "Workflow Automation",
-    desc: "End-to-end AI workflows that connect your tools, eliminate repetitive tasks and run complex processes automatically.",
-  },
-  {
-    icon: "📊",
-    title: "AI Lead Generation",
-    desc: "Proactive AI systems that engage website visitors, qualify prospects and deliver sales-ready leads directly to your pipeline.",
-  },
-  {
-    icon: "🏢",
-    title: "Internal AI Systems",
-    desc: "Custom AI tools for your team — knowledge bases, internal assistants and intelligent onboarding systems built for your organisation.",
+    desc: "Connect your tools and eliminate repetitive tasks with intelligent end-to-end AI workflows built for your operations.",
+    tags: ["Tool integrations", "Zero repetition", "Scales instantly"],
   },
 ];
 
-function ServiceCard({ icon, title, desc }: (typeof services)[0]) {
-  const [hovered, setHovered] = useState(false);
-
-  return (
-    <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        padding: "2rem",
-        border: `1px solid ${hovered ? "rgba(108,99,255,0.35)" : "rgba(255,255,255,0.08)"}`,
-        borderRadius: "16px",
-        background: hovered
-          ? "rgba(108,99,255,0.04)"
-          : "rgba(255,255,255,0.04)",
-        backdropFilter: "blur(10px)",
-        transition: "all 0.3s",
-        transform: hovered ? "translateY(-4px)" : "translateY(0)",
-        boxShadow: hovered
-          ? "0 20px 40px rgba(0,0,0,0.3), 0 0 0 1px rgba(108,99,255,0.1)"
-          : "none",
-        cursor: "default",
-        position: "relative",
-        overflow: "hidden",
-      }}
-    >
-      <div
-        style={{
-          width: 48,
-          height: 48,
-          borderRadius: "12px",
-          background:
-            "linear-gradient(135deg, rgba(108,99,255,0.15), rgba(0,212,170,0.1))",
-          border: "1px solid rgba(108,99,255,0.2)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          fontSize: "1.5rem",
-          marginBottom: "1.25rem",
-        }}
-      >
-        {icon}
-      </div>
-      <div
-        style={{
-          fontFamily: "Syne, sans-serif",
-          fontSize: "1.05rem",
-          fontWeight: 700,
-          marginBottom: "0.5rem",
-          color: "#f0f0f8",
-        }}
-      >
-        {title}
-      </div>
-      <div
-        style={{
-          fontSize: "0.9rem",
-          color: "rgba(240,240,248,0.55)",
-          lineHeight: 1.65,
-        }}
-      >
-        {desc}
-      </div>
-      <div
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          gap: "0.4rem",
-          fontSize: "0.8rem",
-          color: "#7b8cff",
-          marginTop: "1rem",
-          opacity: hovered ? 1 : 0,
-          transform: hovered ? "translateX(0)" : "translateX(-8px)",
-          transition: "all 0.3s",
-        }}
-      >
-        Explore ↗
-      </div>
-    </div>
-  );
-}
-
 export default function Services() {
   return (
-    <section id="solutions" style={{ padding: "6rem 2rem" }}>
+    <section id="solutions" style={{ padding: "6rem 1.5rem", background: "#04040e" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div style={{ marginBottom: "1rem" }}>
-          <span
-            style={{
-              fontSize: "0.75rem",
-              fontWeight: 600,
-              letterSpacing: "0.12em",
-              textTransform: "uppercase",
-              color: "#7b8cff",
-            }}
-          >
-            Our Solutions
-          </span>
-        </div>
-        <h2
-          style={{
-            fontFamily: "Syne, sans-serif",
+        <div style={{ marginBottom: "3.5rem" }}>
+          <span style={{
+            fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em",
+            textTransform: "uppercase", color: "#7c6dff",
+            display: "block", marginBottom: "1rem",
+          }}>What we build</span>
+          <h2 style={{
+            fontFamily: "'Syne', sans-serif",
             fontSize: "clamp(2rem, 4vw, 3rem)",
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.15,
-            marginBottom: "1.25rem",
-            color: "#f0f0f8",
-          }}
-        >
-          Everything your business
-          <br />
-          needs from AI
-        </h2>
-        <p
-          style={{
-            fontSize: "1.05rem",
-            color: "rgba(240,240,248,0.55)",
-            maxWidth: 560,
-            lineHeight: 1.7,
-            marginBottom: "3rem",
-          }}
-        >
-          From intelligent chatbots to full workflow automation — we build
-          production-ready AI systems tailored to your operations.
-        </p>
+            fontWeight: 800, letterSpacing: "-0.025em", lineHeight: 1.1,
+            color: "#f0f0f8", marginBottom: "1rem",
+          }}>
+            Three solutions.<br />Infinite impact.
+          </h2>
+          <p style={{ fontSize: "1.05rem", color: "rgba(240,240,248,0.5)", maxWidth: 500, lineHeight: 1.75 }}>
+            We focus on what actually moves the needle for your business — no fluff, no bloat.
+          </p>
+        </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "1.25rem",
-          }}
-        >
-          {services.map((s) => (
-            <ServiceCard key={s.title} {...s} />
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", gap: "1.25rem" }}>
+          {services.map((s, i) => (
+            <div key={s.title} className="service-card" style={{
+              padding: "2rem",
+              border: "1px solid rgba(255,255,255,0.07)",
+              borderRadius: "20px",
+              background: "rgba(255,255,255,0.02)",
+              position: "relative", overflow: "hidden",
+              animationDelay: `${i * 0.1}s`,
+            }}>
+              {/* Top accent line */}
+              <div style={{
+                position: "absolute", top: 0, left: 0, right: 0, height: "2px",
+                background: "linear-gradient(90deg, #6c63ff, #00d4aa)",
+                opacity: 0.6,
+              }} />
+
+              <div style={{
+                width: 52, height: 52, borderRadius: "14px",
+                background: "rgba(108,99,255,0.1)",
+                border: "1px solid rgba(108,99,255,0.2)",
+                display: "flex", alignItems: "center", justifyContent: "center",
+                fontSize: "1.6rem", marginBottom: "1.5rem",
+              }}>{s.icon}</div>
+
+              <h3 style={{
+                fontFamily: "'Syne', sans-serif", fontSize: "1.15rem",
+                fontWeight: 700, marginBottom: "0.75rem", color: "#f0f0f8",
+              }}>{s.title}</h3>
+
+              <p style={{ fontSize: "0.9rem", color: "rgba(240,240,248,0.5)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
+                {s.desc}
+              </p>
+
+              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+                {s.tags.map(tag => (
+                  <span key={tag} style={{
+                    fontSize: "0.72rem", fontWeight: 500, padding: "0.3rem 0.75rem",
+                    borderRadius: "100px",
+                    background: "rgba(108,99,255,0.08)",
+                    border: "1px solid rgba(108,99,255,0.2)",
+                    color: "#b8b0ff",
+                  }}>{tag}</span>
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>

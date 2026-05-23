@@ -1,138 +1,70 @@
 export default function CTASection() {
   return (
-    <section
-      style={{
-        padding: "6rem 2rem",
-        position: "relative",
-        overflow: "hidden",
-        background:
-          "linear-gradient(135deg, rgba(108,99,255,0.06) 0%, rgba(0,212,170,0.04) 100%)",
-        borderTop: "1px solid rgba(255,255,255,0.08)",
-        borderBottom: "1px solid rgba(255,255,255,0.08)",
-      }}
-    >
-      {/* Center glow */}
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          width: 500,
-          height: 300,
-          background:
-            "radial-gradient(ellipse, rgba(108,99,255,0.12) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
+    <section style={{
+      padding: "7rem 1.5rem", textAlign: "center",
+      position: "relative", overflow: "hidden",
+      background: "rgba(255,255,255,0.015)",
+      borderTop: "1px solid rgba(255,255,255,0.06)",
+    }}>
+      <div style={{
+        position: "absolute", top: "50%", left: "50%",
+        transform: "translate(-50%, -50%)",
+        width: "min(600px, 90vw)", height: 350,
+        background: "radial-gradient(ellipse, rgba(108,99,255,0.12) 0%, transparent 70%)",
+        pointerEvents: "none",
+        animation: "ringPulse 5s ease-in-out infinite",
+      }} />
+      <div style={{
+        position: "absolute", top: "50%", left: "50%",
+        width: "min(800px, 110vw)", height: 450,
+        border: "1px solid rgba(108,99,255,0.06)",
+        borderRadius: "50%",
+        transform: "translate(-50%, -50%)",
+        animation: "ringPulse 5s ease-in-out infinite 0.5s",
+        pointerEvents: "none",
+      }} />
 
-      <div
-        style={{
-          maxWidth: 1100,
-          margin: "0 auto",
-          textAlign: "center",
-          position: "relative",
-        }}
-      >
-        <span
-          style={{
-            fontSize: "0.75rem",
-            fontWeight: 600,
-            letterSpacing: "0.12em",
-            textTransform: "uppercase",
-            color: "#7b8cff",
-            display: "block",
-            marginBottom: "1rem",
-          }}
-        >
-          Get Started
-        </span>
-        <h2
-          style={{
-            fontFamily: "Syne, sans-serif",
-            fontSize: "clamp(2rem, 4vw, 3rem)",
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.15,
-            marginBottom: "1.25rem",
-            color: "#f0f0f8",
-          }}
-        >
-          Ready to implement AI
-          <br />
-          in your business?
+      <div style={{ maxWidth: 700, margin: "0 auto", position: "relative" }}>
+        <span style={{
+          fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em",
+          textTransform: "uppercase", color: "#7c6dff",
+          display: "block", marginBottom: "1.25rem",
+        }}>Ready to start?</span>
+
+        <h2 style={{
+          fontFamily: "'Syne', sans-serif",
+          fontSize: "clamp(2.2rem, 5vw, 3.5rem)",
+          fontWeight: 800, letterSpacing: "-0.03em",
+          lineHeight: 1.08, marginBottom: "1.25rem", color: "#f0f0f8",
+        }}>
+          Let's build something<br />
+          <span className="grad-text">extraordinary together.</span>
         </h2>
-        <p
-          style={{
-            fontSize: "1.05rem",
-            color: "rgba(240,240,248,0.55)",
-            maxWidth: 560,
-            margin: "0 auto 2.5rem",
-            lineHeight: 1.7,
-          }}
-        >
-          Book a free 30-minute strategy call. We&apos;ll identify your biggest
-          automation opportunities and show you exactly what&apos;s possible.
+
+        <p style={{
+          fontSize: "1.05rem", color: "rgba(240,240,248,0.5)",
+          maxWidth: 500, margin: "0 auto 2.75rem", lineHeight: 1.75,
+        }}>
+          Drop us a message and we'll come back to you within 24 hours with a clear plan for your business.
         </p>
-        <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-            justifyContent: "center",
-            flexWrap: "wrap",
-          }}
-        >
-          <button
+
+        <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+          <a href="mailto:hello@conneqtai.com"
+            className="cta-btn-primary"
             style={{
-              padding: "0.875rem 2rem",
-              fontSize: "0.9rem",
-              fontWeight: 500,
+              padding: "1rem 2.5rem", fontSize: "1rem", fontWeight: 500,
               borderRadius: "10px",
-              background: "linear-gradient(135deg, #6c63ff 0%, #7b8cff 100%)",
-              color: "#fff",
-              border: "none",
-              cursor: "pointer",
-              boxShadow: "0 0 30px rgba(108,99,255,0.3)",
-              transition: "all 0.25s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "translateY(-2px)";
-              e.currentTarget.style.boxShadow =
-                "0 0 45px rgba(108,99,255,0.45)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "translateY(0)";
-              e.currentTarget.style.boxShadow =
-                "0 0 30px rgba(108,99,255,0.3)";
-            }}
-          >
-            Book a Free Strategy Call →
-          </button>
-          <button
-            style={{
-              padding: "0.875rem 2rem",
-              fontSize: "0.9rem",
-              fontWeight: 500,
-              borderRadius: "10px",
-              border: "1px solid rgba(255,255,255,0.1)",
-              background: "rgba(255,255,255,0.04)",
-              color: "#f0f0f8",
-              cursor: "pointer",
-              backdropFilter: "blur(10px)",
-              transition: "all 0.25s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.background = "rgba(255,255,255,0.08)";
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.2)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.background = "rgba(255,255,255,0.04)";
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.1)";
-            }}
-          >
-            View Case Studies
-          </button>
+              background: "linear-gradient(135deg, #6c63ff 0%, #a89cff 100%)",
+              color: "#fff", textDecoration: "none", display: "inline-block",
+              boxShadow: "0 0 40px rgba(108,99,255,0.4)",
+            }}>
+            hello@conneqtai.com →
+          </a>
         </div>
+
+        <p style={{ marginTop: "1.5rem", fontSize: "0.8rem", color: "rgba(240,240,248,0.3)" }}>
+          No commitment. No fluff. Just results.
+        </p>
       </div>
     </section>
   );
