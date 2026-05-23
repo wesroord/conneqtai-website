@@ -4,9 +4,9 @@ export default function CTASection(){
   const ref=useRef<HTMLCanvasElement>(null);
   useEffect(()=>{
     const C=ref.current; if(!C)return;
-    const cx=C.getContext("2d")!;
-    const r=C.parentElement!.getBoundingClientRect();
-    C.width=r.width||380; C.height=r.height||300;
+    const cx=C.getContext("2d"); if(!cx)return;
+    const r=C.parentElement?.getBoundingClientRect();
+    C.width=r?.width||380; C.height=r?.height||300;
     const cols=["255,0,170","119,0,255","0,170,255"];
     const rings=[0,.28,.56].map((d,i)=>({p:-d,col:cols[i]}));
     let raf:number;
