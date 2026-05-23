@@ -1,28 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --bg: #050508;
-  --bg2: #0a0a10;
-  --bg3: #0f0f18;
-  --glass: rgba(255, 255, 255, 0.04);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --accent: #6c63ff;
-  --accent2: #00d4aa;
-  --accent3: #7b8cff;
-  --text: #f0f0f8;
-  --muted: rgba(240, 240, 248, 0.5);
-  --muted2: rgba(240, 240, 248, 0.25);
-}
-
-* { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'DM Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-}
+body { background: #04040e; color: #f0f0f8; font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+@keyframes blink { 0%,100%{opacity:1;box-shadow:0 0 6px #00d4aa}50%{opacity:.3;box-shadow:none} }
+@keyframes gradShift { 0%,100%{background-position:0% 50%}50%{background-position:100% 50%} }
+@keyframes orb1 { 0%,100%{transform:translateX(-50%) scale(1) translateY(0)}50%{transform:translateX(-50%) scale(1.12) translateY(-20px)} }
+@keyframes orb2 { 0%,100%{transform:scale(1) translate(0,0)}50%{transform:scale(1.2) translate(-10px,-15px)} }
+@keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)} }
+@keyframes ringPulse { 0%,100%{transform:translate(-50%,-50%) scale(1);opacity:.5}50%{transform:translate(-50%,-50%) scale(1.06);opacity:1} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)} }
+
+.animate-fadeup-1{animation:fadeUp .8s ease .1s both}
+.animate-fadeup-2{animation:fadeUp .8s ease .2s both}
+.animate-fadeup-3{animation:fadeUp .8s ease .3s both}
+.animate-fadeup-4{animation:fadeUp .8s ease .4s both}
+.hero-orb-1{animation:orb1 9s ease-in-out infinite}
+.hero-orb-2{animation:orb2 7s ease-in-out infinite}
+.hero-orb-3{animation:orb2 11s ease-in-out infinite reverse}
+.float-card{animation:float 4s ease-in-out infinite}
+.grad-text{background:linear-gradient(135deg,#fff 0%,#b8b0ff 35%,#7c6dff 65%,#00d4aa 100%);background-size:300% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradShift 6s ease infinite}
+.service-card{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.service-card:hover{transform:translateY(-6px);border-color:rgba(108,99,255,.45)!important;box-shadow:0 24px 48px rgba(0,0,0,.4),0 0 0 1px rgba(108,99,255,.12)!important}
+.step-card{transition:border-color .3s ease,background .3s ease}
+.step-card:hover{border-color:rgba(108,99,255,.35)!important;background:rgba(108,99,255,.03)!important}
+.why-card{transition:border-color .3s ease,transform .3s ease}
+.why-card:hover{border-color:rgba(108,99,255,.3)!important;transform:translateY(-3px)}
+.cta-btn-primary{transition:transform .25s ease,box-shadow .25s ease}
+.cta-btn-primary:hover{transform:translateY(-3px)!important;box-shadow:0 0 50px rgba(108,99,255,.55)!important}
+.nav-link{position:relative;transition:color .2s ease}
+.nav-link::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1px;background:#a89cff;transition:width .3s ease}
+.nav-link:hover{color:#f0f0f8!important}
+.nav-link:hover::after{width:100%}
