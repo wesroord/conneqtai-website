@@ -8,16 +8,17 @@ export default function CTASection(){
     const pr=C.parentElement?.getBoundingClientRect();
     C.width=pr?.width||380; C.height=pr?.height||300;
     const cols=["255,0,170","119,0,255","0,170,255"];
-    const rings=[0,.28,.56].map((d,i)=>({p:-d,col:cols[i]}));
+    const rings:[{p:number,col:string}]=[{p:0,col:cols[0]},{p:-.28,col:cols[1]},{p:-.56,col:cols[2]}];
     let raf:number;
+    const draw=ctx;
     function frame(){
-      ctx.clearRect(0,0,C.width,C.height);
-      rings.forEach((rg:any)=>{
+      draw.clearRect(0,0,C.width,C.height);
+      rings.forEach((rg)=>{
         rg.p+=.0035;if(rg.p>1)rg.p=0;if(rg.p<0)return;
         const rv=rg.p*Math.min(C.width,C.height)*.72;
-        ctx.beginPath();ctx.arc(C.width/2,C.height/2,rv,0,Math.PI*2);
-        ctx.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";
-        ctx.lineWidth=1;ctx.stroke();
+        draw.beginPath();draw.arc(C.width/2,C.height/2,rv,0,Math.PI*2);
+        draw.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";
+        draw.lineWidth=1;draw.stroke();
       });
       raf=requestAnimationFrame(frame);
     }
@@ -32,7 +33,7 @@ export default function CTASection(){
         <p style={{fontSize:"13px",color:"rgba(255,255,255,.3)",marginBottom:"26px",maxWidth:"280px",marginLeft:"auto",marginRight:"auto",lineHeight:1.75}}>Drop us a message. Clear plan within 24 hours. No fluff.</p>
         <div style={{position:"relative",display:"inline-block"}}>
           <div style={{position:"absolute",inset:"-3px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
-          <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block",overflow:"hidden"}}>Get in touch</a>
+          <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Get in touch</a>
         </div>
         <a href="mailto:hello@conneqtai.com" style={{display:"block",fontFamily:"'Space Mono',monospace",fontSize:"10px",color:"rgba(255,0,170,.5)",textDecoration:"none",marginTop:"14px"}}>hello@conneqtai.com</a>
         <div style={{fontSize:"10px",color:"rgba(255,255,255,.14)",marginTop:"11px",fontFamily:"'Space Mono',monospace"}}>no commitment. no fluff. just results.</div>
