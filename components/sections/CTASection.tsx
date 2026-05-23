@@ -8,17 +8,16 @@ export default function CTASection(){
     const pr=C.parentElement?.getBoundingClientRect();
     C.width=pr?.width||380; C.height=pr?.height||300;
     const cols=["255,0,170","119,0,255","0,170,255"];
-    const rings:[{p:number,col:string}]=[{p:0,col:cols[0]},{p:-.28,col:cols[1]},{p:-.56,col:cols[2]}];
-    let raf:number;
-    const draw=ctx;
+    const rings=[{p:0,col:cols[0]},{p:-.28,col:cols[1]},{p:-.56,col:cols[2]}];
+    let raf=0;
     function frame(){
-      draw.clearRect(0,0,C.width,C.height);
+      ctx.clearRect(0,0,C.width,C.height);
       rings.forEach((rg)=>{
         rg.p+=.0035;if(rg.p>1)rg.p=0;if(rg.p<0)return;
         const rv=rg.p*Math.min(C.width,C.height)*.72;
-        draw.beginPath();draw.arc(C.width/2,C.height/2,rv,0,Math.PI*2);
-        draw.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";
-        draw.lineWidth=1;draw.stroke();
+        ctx.beginPath();ctx.arc(C.width/2,C.height/2,rv,0,Math.PI*2);
+        ctx.strokeStyle="rgba("+rg.col+","+String((1-rg.p)*.2)+")";
+        ctx.lineWidth=1;ctx.stroke();
       });
       raf=requestAnimationFrame(frame);
     }
