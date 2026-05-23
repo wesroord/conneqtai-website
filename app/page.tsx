@@ -6,20 +6,20 @@ import HowItWorks from "@/components/sections/HowItWorks";
 import DemoSection from "@/components/sections/DemoSection";
 import WhyConneqtAI from "@/components/sections/WhyConneqtAI";
 import CTASection from "@/components/sections/CTASection";
-
 export default function HomePage() {
   return (
     <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <HowItWorks />
-        <DemoSection />
-        <WhyConneqtAI />
-        <CTASection />
+      <Navbar/>
+      <main style={{paddingTop:"52px"}}>
+        <Hero/>
+        <div style={{height:"1px",background:"linear-gradient(90deg,transparent,#6c63ff,#00d4aa,transparent)",animation:"scanPulse 3s ease-in-out infinite"}}/>
+        <Services/>
+        <HowItWorks/>
+        <WhyConneqtAI/>
+        <DemoSection/>
+        <CTASection/>
       </main>
-      <Footer />
+      <Footer/>
     </>
   );
 }

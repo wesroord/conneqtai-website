@@ -1,91 +1,23 @@
-const services = [
-  {
-    icon: "🤖",
-    title: "AI Chatbots",
-    desc: "Smart, branded chatbots that engage visitors, answer questions and convert leads — automatically, around the clock.",
-    tags: ["24/7 availability", "Lead capture", "Custom trained"],
-  },
-  {
-    icon: "🎯",
-    title: "AI Customer Support",
-    desc: "Resolve tickets, answer FAQs and handle customer queries at scale — without adding headcount.",
-    tags: ["Instant replies", "CRM sync", "Auto-escalation"],
-  },
-  {
-    icon: "🔄",
-    title: "Workflow Automation",
-    desc: "Connect your tools and eliminate repetitive tasks with intelligent end-to-end AI workflows built for your operations.",
-    tags: ["Tool integrations", "Zero repetition", "Scales instantly"],
-  },
+const svcs = [
+  {n:"01",t:"AI Chatbots",d:"Smart branded chatbots that engage visitors, qualify leads and convert — automatically, around the clock. Built and trained entirely on your business data.",tags:["24/7 active","Lead capture","Custom trained"]},
+  {n:"02",t:"AI Customer Support",d:"Resolve tickets, answer FAQs and handle complex queries at scale — without adding a single person to your team. Ever.",tags:["Instant replies","CRM sync","Auto-escalation"]},
+  {n:"03",t:"Workflow Automation",d:"Connect your tools, eliminate repetition and run complex business processes intelligently — end-to-end, fully automated, scales infinitely.",tags:["Tool integrations","Zero repetition","Infinite scale"]},
 ];
-
 export default function Services() {
   return (
-    <section id="solutions" style={{ padding: "6rem 1.5rem", background: "#04040e" }}>
-      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <div style={{ marginBottom: "3.5rem" }}>
-          <span style={{
-            fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.14em",
-            textTransform: "uppercase", color: "#7c6dff",
-            display: "block", marginBottom: "1rem",
-          }}>What we build</span>
-          <h2 style={{
-            fontFamily: "'Syne', sans-serif",
-            fontSize: "clamp(2rem, 4vw, 3rem)",
-            fontWeight: 800, letterSpacing: "-0.025em", lineHeight: 1.1,
-            color: "#f0f0f8", marginBottom: "1rem",
-          }}>
-            Three solutions.<br />Infinite impact.
-          </h2>
-          <p style={{ fontSize: "1.05rem", color: "rgba(240,240,248,0.5)", maxWidth: 500, lineHeight: 1.75 }}>
-            We focus on what actually moves the needle for your business — no fluff, no bloat.
-          </p>
-        </div>
-
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", gap: "1.25rem" }}>
-          {services.map((s, i) => (
-            <div key={s.title} className="service-card" style={{
-              padding: "2rem",
-              border: "1px solid rgba(255,255,255,0.07)",
-              borderRadius: "20px",
-              background: "rgba(255,255,255,0.02)",
-              position: "relative", overflow: "hidden",
-              animationDelay: `${i * 0.1}s`,
-            }}>
-              {/* Top accent line */}
-              <div style={{
-                position: "absolute", top: 0, left: 0, right: 0, height: "2px",
-                background: "linear-gradient(90deg, #6c63ff, #00d4aa)",
-                opacity: 0.6,
-              }} />
-
-              <div style={{
-                width: 52, height: 52, borderRadius: "14px",
-                background: "rgba(108,99,255,0.1)",
-                border: "1px solid rgba(108,99,255,0.2)",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                fontSize: "1.6rem", marginBottom: "1.5rem",
-              }}>{s.icon}</div>
-
-              <h3 style={{
-                fontFamily: "'Syne', sans-serif", fontSize: "1.15rem",
-                fontWeight: 700, marginBottom: "0.75rem", color: "#f0f0f8",
-              }}>{s.title}</h3>
-
-              <p style={{ fontSize: "0.9rem", color: "rgba(240,240,248,0.5)", lineHeight: 1.7, marginBottom: "1.5rem" }}>
-                {s.desc}
-              </p>
-
-              <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-                {s.tags.map(tag => (
-                  <span key={tag} style={{
-                    fontSize: "0.72rem", fontWeight: 500, padding: "0.3rem 0.75rem",
-                    borderRadius: "100px",
-                    background: "rgba(108,99,255,0.08)",
-                    border: "1px solid rgba(108,99,255,0.2)",
-                    color: "#b8b0ff",
-                  }}>{tag}</span>
-                ))}
+    <section id="solutions" style={{padding:"44px 20px",position:"relative",zIndex:5,background:"#03030a"}}>
+      <div style={{maxWidth:1100,margin:"0 auto"}}>
+        <div style={{fontFamily:"'Space Mono',monospace",fontSize:"9px",letterSpacing:".18em",textTransform:"uppercase",color:"rgba(108,99,255,.7)",marginBottom:"20px",display:"flex",alignItems:"center",gap:"8px"}}>// 01 — solutions<span style={{flex:1,height:"1px",background:"linear-gradient(90deg,rgba(108,99,255,.3),transparent)"}}/></div>
+        <h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(22px,5vw,30px)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.08,color:"#f0f0f8",marginBottom:"8px"}}>Three systems.<br/>Infinite impact.</h2>
+        <p style={{fontSize:"12px",color:"rgba(240,240,248,.38)",lineHeight:1.75,marginBottom:"26px",maxWidth:"360px"}}>Built from scratch for your business. No templates. No compromise. Ever.</p>
+        <div style={{display:"flex",flexDirection:"column",gap:"1px",background:"rgba(255,255,255,.05)",borderRadius:"16px",overflow:"hidden",border:"1px solid rgba(255,255,255,.07)"}}>
+          {svcs.map(s=>(
+            <div key={s.n} style={{display:"flex",background:"#03030a",position:"relative",overflow:"hidden",transition:"background .3s"}} className="svc-item">
+              <div style={{fontFamily:"'Space Mono',monospace",fontSize:"11px",color:"rgba(108,99,255,.4)",padding:"20px 14px",borderRight:"1px solid rgba(255,255,255,.05)",display:"flex",alignItems:"flex-start",paddingTop:"22px",minWidth:"42px"}}>{s.n}</div>
+              <div style={{padding:"18px 16px",flex:1}}>
+                <div style={{fontFamily:"'Syne',sans-serif",fontSize:"14px",fontWeight:700,color:"#f0f0f8",marginBottom:"5px"}}>{s.t}</div>
+                <div style={{fontSize:"11px",color:"rgba(240,240,248,.45)",lineHeight:1.65,marginBottom:"10px"}}>{s.d}</div>
+                <div style={{display:"flex",gap:"5px",flexWrap:"wrap"}}>{s.tags.map(t=><span key={t} style={{fontSize:"9px",padding:"2px 8px",borderRadius:"100px",border:"1px solid rgba(108,99,255,.2)",color:"rgba(184,176,255,.7)"}}>{t}</span>)}</div>
               </div>
             </div>
           ))}
