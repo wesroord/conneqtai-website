@@ -33,7 +33,7 @@ export default function PricingCardsNL(){
             </div>
           ))}
         </div>
-        <div style={{textAlign:"center",marginTop:"32px",fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.35)"}}>
+        <div style={{textAlign:"center",marginTop:"32px",fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.6)"}}>
           Prijzen zijn indicatief en starten vanaf de genoemde bedragen. Definitieve prijs afhankelijk van projectomvang. Excl. btw.
         </div>
       </div>
