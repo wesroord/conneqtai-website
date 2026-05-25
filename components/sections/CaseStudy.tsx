@@ -6,7 +6,7 @@ export default function CaseStudy(){
         <div style={{display:"flex",alignItems:"center",gap:"16px",marginBottom:"28px",padding:"20px 24px",borderRadius:"14px",border:"1px solid rgba(255,255,255,.1)",background:"rgba(255,255,255,.03)"}}>
           <div style={{width:"48px",height:"48px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"22px",flexShrink:0}}>🏓</div>
           <div>
-            <div style={{fontFamily:"'Syne',sans-serif",fontSize:"17px",fontWeight:800,color:"#fff",marginBottom:"2px"}}>PadelTown</div>
+            <div style={{fontFamily:"'Inter',sans-serif",fontSize:"17px",fontWeight:800,color:"#fff",marginBottom:"2px"}}>PadelTown</div>
             <div style={{fontSize:"12px",color:"rgba(255,255,255,.55)"}}>Sports and Recreation · AI Chatbot</div>
           </div>
           <div style={{marginLeft:"auto",fontSize:"11px",fontWeight:600,padding:"4px 10px",borderRadius:"100px",border:"1px solid rgba(255,0,170,.4)",color:"#ff00aa",flexShrink:0}}>Live since 2024</div>
@@ -14,7 +14,7 @@ export default function CaseStudy(){
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,160px),1fr))",gap:"12px",marginBottom:"28px"}}>
           {S.map(s=>(
             <div key={s.l} style={{padding:"18px",borderRadius:"12px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.03)",textAlign:"center"}}>
-              <div style={{fontFamily:"'Syne',sans-serif",fontSize:"26px",fontWeight:800,background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",backgroundSize:"300% auto",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",animation:"chromeShift 4s ease infinite",lineHeight:1,marginBottom:"6px"}}>{s.n}</div>
+              <div style={{fontFamily:"'Inter',sans-serif",fontSize:"26px",fontWeight:800,background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",backgroundSize:"300% auto",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",animation:"chromeShift 4s ease infinite",lineHeight:1,marginBottom:"6px"}}>{s.n}</div>
               <div style={{fontSize:"11px",color:"rgba(255,255,255,.55)",lineHeight:1.5}}>{s.l}</div>
             </div>
           ))}

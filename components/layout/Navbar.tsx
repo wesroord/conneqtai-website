@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <>
       <nav style={{position:"fixed",top:0,left:0,right:0,zIndex:100,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"14px 22px",background:scrolled?"rgba(0,0,5,.97)":"rgba(0,0,5,.85)",backdropFilter:"blur(24px)",borderBottom:"1px solid rgba(255,255,255,.08)",transition:"background .3s"}}>
-        <a href="/" style={{textDecoration:"none",fontFamily:"'Syne',sans-serif",fontSize:"17px",fontWeight:800,letterSpacing:"-.02em",display:"flex",alignItems:"center"}}>
+        <a href="/" style={{textDecoration:"none",fontFamily:"'Inter',sans-serif",fontSize:"17px",fontWeight:800,letterSpacing:"-.02em",display:"flex",alignItems:"center"}}>
           <span style={{color:"#fff"}}>Conneqt</span>
           <span style={{background:"linear-gradient(90deg,#ff00aa,#7700ff,#00aaff,#ff00aa)",backgroundSize:"300% auto",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",animation:"logoShift 3s ease infinite"}}>AI</span>
         </a>

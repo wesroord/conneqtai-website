@@ -10,7 +10,7 @@ export default function PricingFAQ(){
   return(
     <section style={{padding:"48px 24px 80px",background:"#020010",borderTop:"1px solid rgba(255,255,255,.07)"}}>
       <div style={{maxWidth:700,margin:"0 auto"}}>
-        <h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(22px,4vw,28px)",fontWeight:800,color:"#fff",marginBottom:"28px",letterSpacing:"-.02em"}}>Common questions.</h2>
+        <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(22px,4vw,28px)",fontWeight:800,color:"#fff",marginBottom:"28px",letterSpacing:"-.02em"}}>Common questions.</h2>
         <div style={{display:"flex",flexDirection:"column",gap:"1px",background:"rgba(255,255,255,.07)",borderRadius:"12px",overflow:"hidden"}}>
           {F.map(f=>(
             <div key={f.q} style={{padding:"22px 24px",background:"#000005"}}>
