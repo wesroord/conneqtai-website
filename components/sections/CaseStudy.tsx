@@ -9,7 +9,7 @@ export default function CaseStudy(){
             <div style={{fontFamily:"'Inter',sans-serif",fontSize:"17px",fontWeight:800,color:"#fff",marginBottom:"2px"}}>PadelTown</div>
             <div style={{fontSize:"12px",color:"rgba(255,255,255,.75)"}}>Sports and Recreation · AI Chatbot</div>
           </div>
-          <div style={{marginLeft:"auto",fontSize:"11px",fontWeight:600,padding:"4px 10px",borderRadius:"100px",border:"1px solid rgba(255,0,170,.4)",color:"#ff00aa",flexShrink:0}}>Live since 2024</div>
+          <div style={{marginLeft:"auto",fontSize:"11px",fontWeight:600,padding:"4px 10px",borderRadius:"100px",border:"1px solid rgba(255,0,170,1)",color:"#ff00aa",flexShrink:0}}>Live since 2024</div>
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,160px),1fr))",gap:"12px",marginBottom:"28px"}}>
           {S.map(s=>(

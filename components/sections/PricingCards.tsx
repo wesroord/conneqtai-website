@@ -14,7 +14,7 @@ export default function PricingCards(){
               {p.h&&<div style={{position:"absolute",top:0,left:0,right:0,height:"2px",background:"linear-gradient(90deg,#ff00aa,#7700ff,#00aaff)"}}/>}
               <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginBottom:"14px"}}>
                 <span style={{fontSize:"22px"}}>{p.i}</span>
-                <span style={{fontFamily:"'Inter',sans-serif",fontSize:"10px",fontWeight:600,padding:"3px 10px",borderRadius:"100px",border:p.h?"1px solid rgba(255,0,170,.5)":"1px solid rgba(255,255,255,.2)",color:p.h?"#ff00aa":"rgba(255,255,255,.6)"}}>{p.t}</span>
+                <span style={{fontFamily:"'Inter',sans-serif",fontSize:"10px",fontWeight:600,padding:"3px 10px",borderRadius:"100px",border:p.h?"1px solid rgba(255,0,170,.5)":"1px solid rgba(255,255,255,.6)",color:p.h?"#ff00aa":"rgba(255,255,255,.6)"}}>{p.t}</span>
               </div>
               <div style={{fontFamily:"'Inter',sans-serif",fontSize:"18px",fontWeight:700,color:"#fff",marginBottom:"10px"}}>{p.n}</div>
               <div style={{marginBottom:"4px",display:"flex",alignItems:"baseline",gap:"6px"}}>
