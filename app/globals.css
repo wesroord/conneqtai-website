@@ -22,35 +22,44 @@ img, video { max-width: 100%; height: auto; }
   animation: chromeShift 4s ease infinite;
 }
 
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 @media (max-width: 768px) {
-  section { 
-    padding-left: 20px !important; 
-    padding-right: 20px !important;
+  .desktop-nav { display: none !important; }
+  .hamburger { display: flex !important; }
+  
+  /* Alle section content centreren */
+  section h1, section h2 {
     text-align: center !important;
   }
-  section h1, section h2, section h3, section p, section span {
+  section > div > p {
     text-align: center !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-  section > div, section > div > div {
-    text-align: center !important;
-    align-items: center !important;
-    justify-content: center !important;
-  }
-  /* Stats grid 2x2 op mobiel */
+  /* Stats grid 2 kolommen op mobiel */
   div[style*="repeat(4,1fr)"] {
     grid-template-columns: repeat(2,1fr) !important;
   }
-  /* Labels in services sectie links laten */
-  div[style*="borderBottom"][style*="flex"] > div:first-child {
-    text-align: left !important;
+  /* Pricing grid 1 kolom op mobiel */
+  div[style*="repeat(auto-fit,minmax(min(100%,240px)"] {
+    grid-template-columns: 1fr !important;
+  }
+  /* Section labels centreren */
+  .section-label {
+    justify-content: center !important;
+  }
+  div[style*="letterSpacing:\".18em\""] {
+    justify-content: center !important;
   }
 }
 
 @media (min-width: 769px) {
   .desktop-nav { display: flex !important; }
   .hamburger { display: none !important; }
-}
-@media (max-width: 768px) {
-  .desktop-nav { display: none !important; }
-  .hamburger { display: flex !important; }
 }

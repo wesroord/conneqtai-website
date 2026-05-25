@@ -14,7 +14,7 @@ export default function PricingFAQNL(){
         <div style={{display:"flex",flexDirection:"column",gap:"1px",background:"rgba(255,255,255,.07)",borderRadius:"12px",overflow:"hidden"}}>
           {F.map(f=>(
             <div key={f.q} style={{padding:"22px 24px",background:"#000005"}}>
-              <div style={{fontFamily:"'Inter',sans-serif",fontSize:"14px",fontWeight:600,color:"#fff",marginBottom:"8px"}}>{f.q}</div>
+              <div style={{fontFamily:"'Inter',sans-serif",fontSize:"14px",fontWeight:600,color:"#fff",marginBottom:"8px",textAlign:"center" as const}}>{f.q}</div>
               <div style={{fontSize:"13px",color:"rgba(255,255,255,.7)",lineHeight:1.7}}>{f.a}</div>
             </div>
           ))}
