@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 const P=[
-  {i:"🤖",n:"Chatbot",t:"Meest gekozen",p:"997",m:"147",d:"Een slimme AI-chatbot die 24/7 voor jouw bedrijf werkt. Beantwoordt vragen, vangt leads op en slaapt nooit.",f:["AI-chatbot op je website","Getraind op jouw producten en FAQ","Automatische lead capture","Eigen tone of voice","Maandelijks onderhoud en updates"],h:false},
-  {i:"🎯",n:"Support",t:"Beste waarde",p:"2.497",m:"197",d:"Volledige AI-klantenservice die e-mails en chat automatisch afhandelt — zodat jouw team zich richt op wat telt.",f:["Alles uit Chatbot","AI e-mail en chat support","Auto-escalatie naar je team","HubSpot CRM-integratie","Maandelijkse rapportage"],h:false},
-  {i:"⚡",n:"Automation",t:"Max ROI",p:"4.997",m:"397",d:"Volledige workflow-automatisering die al je tools verbindt en repetitief werk volledig elimineert.",f:["Alles uit Support","Volledige workflow-automatisering","Tool- en app-integraties","Automatische lead opvolging","Wekelijkse optimalisatie"],h:false},
+  {i:"🤖",n:"Chatbot",t:"Meest gekozen",p:"997",m:"247",d:"Een slimme AI-chatbot die 24/7 voor jouw bedrijf werkt. Beantwoordt vragen, vangt leads op en slaapt nooit.",f:["AI-chatbot op je website","Getraind op jouw producten en FAQ","Automatische lead capture","Eigen tone of voice","Maandelijks onderhoud en updates"],h:false},
+  {i:"🎯",n:"Support",t:"Beste waarde",p:"2.497",m:"597",d:"Volledige AI-klantenservice die e-mails en chat automatisch afhandelt — zodat jouw team zich richt op wat telt.",f:["Alles uit Chatbot","AI e-mail en chat support","Auto-escalatie naar je team","HubSpot CRM-integratie","Maandelijkse rapportage"],h:false},
+  {i:"⚡",n:"Automation",t:"Max ROI",p:"4.997",m:"597",d:"Volledige workflow-automatisering die al je tools verbindt en repetitief werk volledig elimineert.",f:["Alles uit Support","Volledige workflow-automatisering","Tool- en app-integraties","Automatische lead opvolging","Wekelijkse optimalisatie"],h:false},
   {i:"🏢",n:"Enterprise",t:"Op maat",p:"Op aanvraag",m:"",d:"Het complete ConneqtAI-systeem specifiek gebouwd voor jouw bedrijf. Alles in één.",f:["Alles uit Automation","WhatsApp AI-assistent","Maatwerk integraties","Wekelijkse strategiegesprekken","Vaste accountmanager"],h:false},
 ];
 export default function PricingCardsNL(){
