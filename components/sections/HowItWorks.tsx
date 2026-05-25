@@ -1,2 +1,44 @@
-const ST=[{n:"01",t:"Strategy",d:"We audit your workflows and architect the perfect AI system for your business."},{n:"02",t:"Build",d:"Custom AI trained on your data and brand voice, tested before launch."},{n:"03",t:"Launch",d:"Connected to your website, CRM and tools. Live in 2-4 weeks."},{n:"04",t:"Optimise",d:"Continuous monitoring. Your AI gets smarter every week."}];
-export default function HowItWorks(){return(<section id="process" style={{padding:"44px 22px",background:"#020010",borderTop:"1px solid rgba(255,255,255,.05)",borderBottom:"1px solid rgba(255,255,255,.05)"}}><div style={{maxWidth:1100,margin:"0 auto"}}><div style={{fontFamily:"'Space Mono',monospace",fontSize:"9px",letterSpacing:".18em",textTransform:"uppercase",color:"rgba(119,0,255,.7)",marginBottom:"18px",display:"flex",alignItems:"center",gap:"8px"}}>process<span style={{flex:1,height:"1px",background:"linear-gradient(90deg,rgba(119,0,255,.3),transparent)"}}/></div><h2 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(22px,5vw,30px)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.08,color:"#fff",marginBottom:"8px"}}>Live in weeks.<br/>Not months.</h2><p style={{fontSize:"12px",color:"rgba(255,255,255,.3)",lineHeight:1.75,marginBottom:"24px",maxWidth:"340px"}}>Four steps. Fast execution. Continuous improvement.</p><div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:"10px"}}>{ST.map(s=><div key={s.n} style={{padding:"22px",borderRadius:"12px",border:"1px solid rgba(255,255,255,.07)",background:"#000005",position:"relative",overflow:"hidden"}}><div style={{position:"absolute",top:0,left:0,right:0,height:"2px",background:"linear-gradient(90deg,#ff00aa,#7700ff,#00aaff)",opacity:.4}}/><div style={{position:"absolute",bottom:"-20px",right:"-10px",fontSize:"80px",fontWeight:800,color:"rgba(255,0,170,.06)",lineHeight:1,fontFamily:"'Syne',sans-serif",pointerEvents:"none"}}>{s.n}</div><span className="ps-num-glow">{s.n}</span><div style={{fontFamily:"'Syne',sans-serif",fontSize:"14px",fontWeight:700,color:"#fff",marginBottom:"5px"}}>{s.t}</div><div style={{fontSize:"11px",color:"rgba(255,255,255,.33)",lineHeight:1.65}}>{s.d}</div></div>)}</div></div></section>);}
+"use client";
+const steps = [
+  { num: "01", title: "Strategy", desc: "We audit your workflows, identify automation opportunities and design the AI architecture that fits your exact business needs." },
+  { num: "02", title: "Development", desc: "Our team builds your custom AI system — trained on your data, tuned to your brand voice, tested for real-world performance." },
+  { num: "03", title: "Integration", desc: "We connect the AI to your existing tools — website, CRM, WhatsApp, email, Slack — so it plugs seamlessly into how you work." },
+  { num: "04", title: "Optimisation", desc: "Ongoing monitoring, performance tuning and updates — so your AI system keeps improving and delivering value over time." },
+];
+
+export default function HowItWorks() {
+  return (
+    <section id="how-it-works" style={{ padding: "6rem 2rem", background: "#0a0a10" }}>
+      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+        <span style={{ fontSize: "0.75rem", fontWeight: 600, letterSpacing: "0.12em", textTransform: "uppercase", color: "#ff00aa", display: "block", marginBottom: "1rem" }}>
+          The Process
+        </span>
+        <h2 style={{ fontFamily: "'Inter', sans-serif", fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 700, letterSpacing: "-0.02em", lineHeight: 1.15, marginBottom: "1.25rem", color: "#f0f0f8" }}>
+          From strategy to<br />live AI system in weeks
+        </h2>
+        <p style={{ fontSize: "1.05rem", color: "rgba(240,240,248,0.55)", maxWidth: 560, lineHeight: 1.7, marginBottom: "3.5rem" }}>
+          A proven 4-step process that takes your business from idea to production-ready AI — fast.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.5rem" }}>
+          {steps.map((step) => (
+            <div key={step.num}
+              style={{ padding: "2rem 1.75rem", border: "1px solid rgba(255,255,255,0.08)", borderRadius: "16px", background: "rgba(255,255,255,0.02)", transition: "border-color 0.3s" }}
+              onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(255,0,170,0.35)")}
+              onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)")}
+            >
+              <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "3rem", fontWeight: 800, lineHeight: 1, marginBottom: "1rem", background: "linear-gradient(135deg, #ff00aa, #7700ff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                {step.num}
+              </div>
+              <div style={{ fontFamily: "'Inter', sans-serif", fontSize: "1.1rem", fontWeight: 700, marginBottom: "0.5rem", color: "#f0f0f8" }}>
+                {step.title}
+              </div>
+              <div style={{ fontSize: "0.875rem", color: "rgba(240,240,248,0.55)", lineHeight: 1.65 }}>
+                {step.desc}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
