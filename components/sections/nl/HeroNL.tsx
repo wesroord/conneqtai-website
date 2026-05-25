@@ -18,7 +18,7 @@ export default function HeroNL() {
     frame(); return () => cancelAnimationFrame(raf);
   }, []);
   return (
-    <section style={{position:"relative",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center",padding:"100px 24px 60px",overflow:"hidden"}}>
+    <section style={{position:"relative",minHeight:"100vh",display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",textAlign:"center" as const,padding:"100px 24px 60px",overflow:"hidden"}}>
       <canvas ref={ref} style={{position:"absolute",inset:0,width:"100%",height:"100%",pointerEvents:"none",zIndex:0}} />
       <div style={{position:"absolute",inset:0,background:"radial-gradient(ellipse 120% 80% at 20% 50%,rgba(119,0,255,.15) 0%,transparent 55%),radial-gradient(ellipse 100% 80% at 80% 30%,rgba(255,0,170,.12) 0%,transparent 50%),#000005",zIndex:0}} />
       <div style={{position:"relative",zIndex:2,width:"100%",maxWidth:"700px",margin:"0 auto"}}>
@@ -42,7 +42,7 @@ export default function HeroNL() {
         </div>
         <div style={{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:"1px",background:"rgba(255,255,255,.06)",borderRadius:"12px",overflow:"hidden",border:"1px solid rgba(255,255,255,.07)"}}>
           {[{n:"24/7",l:"Altijd actief"},{n:"80%",l:"Geautomatiseerd"},{n:"3x",l:"Sneller"},{n:"60%",l:"Kostenbesparing"}].map(s => (
-            <div key={s.l} style={{background:"#000005",padding:"16px 8px",textAlign:"center"}}>
+            <div key={s.l} style={{background:"#000005",padding:"16px 8px",textAlign:"center" as const}}>
               <span style={{fontFamily:"'Inter',sans-serif",fontSize:"20px",fontWeight:700,display:"block",marginBottom:"4px",color:"#fff"}}>{s.n}</span>
               <span style={{fontFamily:"'Inter',sans-serif",fontSize:"10px",color:"rgba(255,255,255,.55)",textTransform:"uppercase",letterSpacing:".04em"}}>{s.l}</span>
             </div>

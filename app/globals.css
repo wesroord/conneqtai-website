@@ -14,11 +14,23 @@ section { width: 100%; }
 @keyframes tick3 { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 @keyframes glowRot { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
 
+/* Responsive centrering */
 @media (max-width: 768px) {
   section { padding-left: 16px !important; padding-right: 16px !important; }
-  h1, h2 { word-break: break-word; }
+  h1, h2 { word-break: break-word; text-align: center; }
+  p { text-align: center; }
   .desktop-nav { display: none !important; }
   .hamburger { display: flex !important; }
+
+  /* Stats blok gelijke kolommen en gecentreerde tekst */
+  div[style*="gridTemplateColumns:\"repeat(4,1fr)\""] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  div[style*="gridTemplateColumns: \"repeat(4,1fr)\""] span {
+    text-align: center !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+  }
 }
 @media (min-width: 769px) {
   .desktop-nav { display: flex !important; }
