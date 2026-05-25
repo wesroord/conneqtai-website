@@ -30,7 +30,7 @@ export default function PricingCards(){
             </div>
           ))}
         </div>
-        <div style={{textAlign:"center",marginTop:"32px",fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.35)"}}>
+        <div style={{textAlign:"center",marginTop:"32px",fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.65)"}}>
           All systems include onboarding, training and 30-day post-launch support. Prices excl. VAT.
         </div>
       </div>

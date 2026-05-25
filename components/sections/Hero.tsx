@@ -34,7 +34,7 @@ export default function Hero() {
           <span style={{flex:1,height:"1px",maxWidth:"40px",background:"linear-gradient(270deg,transparent,rgba(255,0,170,.5))"}} />
         </div>
         <div style={{animation:"fup3 .8s ease .1s both",marginBottom:"20px"}}>
-          <span style={{fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.4)",display:"block",letterSpacing:".08em",textTransform:"uppercase",marginBottom:"14px",fontWeight:500}}>next generation</span>
+          <span style={{fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.7)",display:"block",letterSpacing:".08em",textTransform:"uppercase",marginBottom:"14px",fontWeight:500}}>next generation</span>
           <h1 style={{margin:0,padding:0}}>
             <span style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(28px,6vw,52px)",fontWeight:700,color:"#fff",display:"block",lineHeight:1.1,letterSpacing:"-.02em"}}>Your business,</span>
             <span style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(32px,7vw,58px)",fontWeight:800,display:"block",lineHeight:1.1,letterSpacing:"-.02em",background:"linear-gradient(135deg,#fff 0%,#ff00aa 30%,#7700ff 60%,#00aaff 100%)",backgroundSize:"300% auto",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",animation:"chromeShift 4s ease infinite"}}>supercharged by AI.</span>
@@ -54,7 +54,7 @@ export default function Hero() {
           {[{n:"24/7",l:"Always on"},{n:"80%",l:"Automated"},{n:"3x",l:"Faster"},{n:"60%",l:"Cost saved"}].map(s => (
             <div key={s.l} style={{background:"#000005",padding:"16px 8px",textAlign:"center"}}>
               <span style={{fontFamily:"'Inter',sans-serif",fontSize:"20px",fontWeight:700,display:"block",marginBottom:"4px",color:"#fff"}}>{s.n}</span>
-              <span style={{fontFamily:"'Inter',sans-serif",fontSize:"10px",color:"rgba(255,255,255,.45)",textTransform:"uppercase",letterSpacing:".04em"}}>{s.l}</span>
+              <span style={{fontFamily:"'Inter',sans-serif",fontSize:"10px",color:"rgba(255,255,255,.7)",textTransform:"uppercase",letterSpacing:".04em"}}>{s.l}</span>
             </div>
           ))}
         </div>
