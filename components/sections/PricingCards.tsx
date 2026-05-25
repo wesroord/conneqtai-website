@@ -19,7 +19,7 @@ export default function PricingCards(){
               <div style={{fontFamily:"'Inter',sans-serif",fontSize:"18px",fontWeight:700,color:"#fff",marginBottom:"10px"}}>{p.n}</div>
               <div style={{marginBottom:"4px",display:"flex",alignItems:"baseline",gap:"6px"}}>
                 <span style={{fontFamily:"'Inter',sans-serif",fontSize:"28px",fontWeight:700,color:"#fff"}}>{"€"+p.p}</span>
-                <span style={{fontSize:"12px",color:"rgba(255,255,255,.5)"}}>one-time</span>
+                <span style={{fontSize:"12px",color:"rgba(255,255,255,.5)"}}>one-time (vanaf)</span>
               </div>
               <div style={{fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"#ff00aa",marginBottom:"14px",fontWeight:500}}>{"+ €"+p.m+" / month"}</div>
               <p style={{fontSize:"13px",color:"rgba(255,255,255,.65)",lineHeight:1.65,marginBottom:"18px",flex:1}}>{p.d}</p>
