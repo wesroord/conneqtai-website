@@ -1,1 +1,11 @@
-export default function CasesHero(){return(<section style={{padding:"80px 24px 48px",textAlign:"center",position:"relative",background:"#000005"}}><div style={{position:"absolute",inset:0,background:"radial-gradient(ellipse 100% 80% at 50% 0%,rgba(119,0,255,.18) 0%,transparent 60%),#000005",zIndex:0}}/><div style={{position:"relative",zIndex:2,maxWidth:"700px",margin:"0 auto"}}><h1 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(32px,6vw,52px)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.05,color:"#fff",marginBottom:"16px"}}>AI that delivers.<br/><span className="chrome">Results that prove it.</span></h1><p style={{fontSize:"clamp(13px,2vw,15px)",color:"rgba(255,255,255,.45)",maxWidth:"480px",margin:"0 auto",lineHeight:1.75}}>See how real businesses are saving time and growing revenue with ConneqtAI.</p></div></section>);}
+export default function CasesHero(){
+  return(
+    <section style={{padding:"80px 24px 48px",textAlign:"center",position:"relative",overflow:"hidden",background:"#000005"}}>
+      <div style={{position:"absolute",inset:0,background:"radial-gradient(ellipse 100% 80% at 50% 0%,rgba(119,0,255,.18) 0%,transparent 60%),#000005",zIndex:0}}/>
+      <div style={{position:"relative",zIndex:2,maxWidth:"700px",margin:"0 auto"}}>
+        <h1 style={{fontFamily:"'Syne',sans-serif",fontSize:"clamp(32px,6vw,52px)",fontWeight:800,letterSpacing:"-.02em",lineHeight:1.1,color:"#fff",marginBottom:"16px"}}>AI that delivers.<br/><span className="chrome">Results that prove it.</span></h1>
+        <p style={{fontSize:"clamp(14px,2vw,16px)",color:"rgba(255,255,255,.65)",maxWidth:"480px",margin:"0 auto",lineHeight:1.75}}>See how real businesses are saving time, reducing costs and growing revenue with ConneqtAI systems.</p>
+      </div>
+    </section>
+  );
+}
