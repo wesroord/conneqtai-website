@@ -1,9 +1,9 @@
 "use client";
 const steps = [
   { num: "01", title: "Strategy", desc: "We audit your workflows, identify automation opportunities and design the AI architecture that fits your exact business needs." },
-  { num: "02", title: "Development", desc: "Our team builds your custom AI system — trained on your data, tuned to your brand voice, tested for real-world performance." },
-  { num: "03", title: "Integration", desc: "We connect the AI to your existing tools — website, CRM, WhatsApp, email, Slack — so it plugs seamlessly into how you work." },
-  { num: "04", title: "Optimisation", desc: "Ongoing monitoring, performance tuning and updates — so your AI system keeps improving and delivering value over time." },
+  { num: "02", title: "Development", desc: "Our team builds your custom AI system, trained on your data, tuned to your brand voice, tested for real-world performance." },
+  { num: "03", title: "Integration", desc: "We connect the AI to your existing tools, website, CRM, WhatsApp, email, Slack, so it plugs seamlessly into how you work." },
+  { num: "04", title: "Optimisation", desc: "Ongoing monitoring, performance tuning and updates, so your AI system keeps improving and delivering value over time." },
 ];
 
 export default function HowItWorks() {
@@ -17,7 +17,7 @@ export default function HowItWorks() {
           From strategy to<br />live AI system in weeks
         </h2>
         <p style={{ fontSize: "1.05rem", color: "rgba(240,240,248,0.55)", maxWidth: 560, lineHeight: 1.7, marginBottom: "3.5rem" }}>
-          A proven 4-step process that takes your business from idea to production-ready AI — fast.
+          A proven 4-step process that takes your business from idea to production-ready AI, fast.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1.5rem" }}>
           {steps.map((step) => (

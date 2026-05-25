@@ -22,8 +22,8 @@ export default function CaseStudy(){
         <div style={{display:"flex",flexDirection:"column",gap:"14px"}}>
           {[
             {tag:"The challenge",col:"#ff00aa",text:"PadelTown was receiving over 340 customer questions per month about court reservations, membership prices, opening hours and events. Their small team was spending nearly a full working day every week answering the same questions via email, phone and Instagram. They needed a solution that handled this automatically without losing their personal, friendly feel."},
-            {tag:"The solution",col:"#7700ff",text:"ConneqtAI built a custom AI chatbot trained entirely on PadelTown data — pricing, court availability, membership options, events and FAQs. The chatbot was embedded on their website and trained in PadelTown friendly, sporty tone of voice. It answers questions instantly 24/7 and automatically captures contact details from visitors who want to book or get more information."},
-            {tag:"The results",col:"#00aaff",text:"Within the first month the AI was handling over 85% of all incoming customer questions automatically. The PadelTown team went from spending 28 hours per month on repetitive queries to under 4 hours — saving over €2.100 in staff costs every single month. Customer response time dropped from an average of 4 hours to under 10 seconds."}
+            {tag:"The solution",col:"#7700ff",text:"ConneqtAI built a custom AI chatbot trained entirely on PadelTown data, pricing, court availability, membership options, events and FAQs. The chatbot was embedded on their website and trained in PadelTown friendly, sporty tone of voice. It answers questions instantly 24/7 and automatically captures contact details from visitors who want to book or get more information."},
+            {tag:"The results",col:"#00aaff",text:"Within the first month the AI was handling over 85% of all incoming customer questions automatically. The PadelTown team went from spending 28 hours per month on repetitive queries to under 4 hours, saving over €2.100 in staff costs every single month. Customer response time dropped from an average of 4 hours to under 10 seconds."}
           ].map(b=>(
             <div key={b.tag} style={{padding:"24px",borderRadius:"14px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
               <div style={{fontSize:"11px",fontWeight:600,letterSpacing:".08em",textTransform:"uppercase",color:b.col,marginBottom:"10px"}}>{b.tag}</div>
@@ -32,7 +32,7 @@ export default function CaseStudy(){
           ))}
         </div>
         <div style={{marginTop:"24px",padding:"24px",borderRadius:"14px",border:"1px solid rgba(255,0,170,.2)",background:"rgba(255,0,170,.04)"}}>
-          <p style={{fontSize:"14px",color:"rgba(255,255,255,.8)",lineHeight:1.8,fontStyle:"italic",marginBottom:"16px"}}>"The AI chatbot has completely changed how we handle customer communication. We used to stress about missing messages in the evening or on weekends. Now everything is handled automatically — and our customers actually get faster answers than before."</p>
+          <p style={{fontSize:"14px",color:"rgba(255,255,255,.8)",lineHeight:1.8,fontStyle:"italic",marginBottom:"16px"}}>"The AI chatbot has completely changed how we handle customer communication. We used to stress about missing messages in the evening or on weekends. Now everything is handled automatically, and our customers actually get faster answers than before."</p>
           <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
             <div style={{width:"32px",height:"32px",borderRadius:"50%",background:"linear-gradient(135deg,#ff00aa,#7700ff)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"11px",fontWeight:700,color:"#fff"}}>PT</div>
             <div>
@@ -45,7 +45,7 @@ export default function CaseStudy(){
           <div>
             <div style={{fontSize:"11px",fontWeight:600,letterSpacing:".08em",textTransform:"uppercase",color:"rgba(255,255,255,.4)",marginBottom:"6px"}}>See it live</div>
             <div style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"4px"}}>The chatbot is live on the PadelTown website</div>
-            <div style={{fontSize:"13px",color:"rgba(255,255,255,.55)"}}>Visit their site and try it yourself — it's the one in the corner.</div>
+            <div style={{fontSize:"13px",color:"rgba(255,255,255,.55)"}}>Visit their site and try it yourself, it's the one in the corner.</div>
           </div>
           <a href="https://padel-town.nl" target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"12px 22px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",fontFamily:"'Inter',sans-serif",fontSize:"14px",fontWeight:600,flexShrink:0}}>
             Visit PadelTown →

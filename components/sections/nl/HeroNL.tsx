@@ -34,7 +34,7 @@ export default function HeroNL() {
           </h1>
         </div>
         <p style={{fontSize:"clamp(14px,2vw,16px)",color:"rgba(255,255,255,.75)",maxWidth:"480px",lineHeight:1.75,margin:"0 auto 28px",fontWeight:400}}>
-          Wij bouwen <strong style={{color:"rgba(255,255,255,.95)",fontWeight:600}}>AI-chatbots, klantenservice-systemen en workflow-automatiseringen</strong> die 24/7 draaien — kosten verlagen en omzet verhogen.
+          Wij bouwen <strong style={{color:"rgba(255,255,255,.95)",fontWeight:600}}>AI-chatbots, klantenservice-systemen en workflow-automatiseringen</strong> die 24/7 draaien, kosten verlagen en omzet verhogen.
         </p>
         <div style={{display:"flex",gap:"12px",justifyContent:"center",flexWrap:"wrap",marginBottom:"36px"}}>
           <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"15px",fontWeight:600,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Start nu</a>

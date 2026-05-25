@@ -41,7 +41,7 @@ export default function Hero() {
           </h1>
         </div>
         <p style={{fontSize:"clamp(14px,2vw,16px)",color:"rgba(255,255,255,.6)",maxWidth:"480px",lineHeight:1.75,margin:"0 auto 28px",fontWeight:400,animation:"fup3 .8s ease .2s both"}}>
-          We build <strong style={{color:"rgba(255,255,255,.85)",fontWeight:600}}>AI chatbots, customer support systems and workflow automations</strong> that run 24/7 — cutting costs and growing revenue.
+          We build <strong style={{color:"rgba(255,255,255,.85)",fontWeight:600}}>AI chatbots, customer support systems and workflow automations</strong> that run 24/7, cutting costs and growing revenue.
         </p>
         <div style={{display:"flex",gap:"12px",justifyContent:"center",flexWrap:"wrap",marginBottom:"36px",animation:"fup3 .8s ease .25s both"}}>
           <div style={{position:"relative",display:"inline-block"}}>
