@@ -2,7 +2,6 @@
 html { -webkit-text-size-adjust: 100%; }
 body { background: #000005; color: #fff; font-family: 'Inter', sans-serif; overflow-x: hidden; }
 img, video { max-width: 100%; height: auto; }
-section { width: 100%; }
 
 @keyframes chromeShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
 @keyframes logoShift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
@@ -13,26 +12,45 @@ section { width: 100%; }
 @keyframes flSpin { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
 @keyframes tick3 { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 @keyframes glowRot { 0%{transform:rotate(0deg)} 100%{transform:rotate(360deg)} }
+@keyframes nbp { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-/* Responsive centrering */
+.chrome {
+  background: linear-gradient(135deg,#fff 0%,#ff00aa 30%,#7700ff 60%,#00aaff 100%);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: chromeShift 4s ease infinite;
+}
+
 @media (max-width: 768px) {
-  section { padding-left: 16px !important; padding-right: 16px !important; }
-  h1, h2 { word-break: break-word; text-align: center; }
-  p { text-align: center; }
-  .desktop-nav { display: none !important; }
-  .hamburger { display: flex !important; }
-
-  /* Stats blok gelijke kolommen en gecentreerde tekst */
-  div[style*="gridTemplateColumns:\"repeat(4,1fr)\""] {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-  div[style*="gridTemplateColumns: \"repeat(4,1fr)\""] span {
+  section { 
+    padding-left: 20px !important; 
+    padding-right: 20px !important;
     text-align: center !important;
-    white-space: normal !important;
-    word-break: break-word !important;
+  }
+  section h1, section h2, section h3, section p, section span {
+    text-align: center !important;
+  }
+  section > div, section > div > div {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  /* Stats grid 2x2 op mobiel */
+  div[style*="repeat(4,1fr)"] {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+  /* Labels in services sectie links laten */
+  div[style*="borderBottom"][style*="flex"] > div:first-child {
+    text-align: left !important;
   }
 }
+
 @media (min-width: 769px) {
   .desktop-nav { display: flex !important; }
   .hamburger { display: none !important; }
+}
+@media (max-width: 768px) {
+  .desktop-nav { display: none !important; }
+  .hamburger { display: flex !important; }
 }
