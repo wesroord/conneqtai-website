@@ -1,8 +1,8 @@
 const P=[
-  {i:"🤖",n:"Chatbot",t:"Most popular",p:"1.997",m:"197",d:"A smart AI chatbot that works for your business 24/7. Answers questions, captures leads and never sleeps.",f:["AI chatbot on your website","Trained on your products and FAQs","Automatic lead capture","Custom tone of voice","Monthly maintenance and updates"],h:false},
-  {i:"🎯",n:"Support",t:"Best value",p:"2.997",m:"297",d:"Full AI customer support that handles emails and chat automatically — so your team focuses on what matters.",f:["Everything in Chatbot","AI email and chat support","Auto-escalation to your team","HubSpot CRM integration","Monthly reporting"],h:true},
-  {i:"⚡",n:"Automation",t:"Max ROI",p:"4.997",m:"497",d:"Full workflow automation that connects all your tools and eliminates repetitive work completely.",f:["Everything in Support","Full workflow automation","Tool and app integrations","Automatic lead follow-up","Weekly optimisation"],h:false},
-  {i:"🏢",n:"Enterprise",t:"Custom",p:"9.997",m:"997",d:"The complete ConneqtAI system built specifically for your business. Everything in one.",f:["Everything in Automation","WhatsApp AI assistant","Custom integrations","Weekly strategy calls","Dedicated account manager"],h:false}
+  {i:"🤖",n:"Chatbot",t:"Most popular",p:"997",m:"147",d:"A smart AI chatbot that works for your business 24/7. Answers questions, captures leads and never sleeps.",f:["AI chatbot on your website","Trained on your products and FAQs","Automatic lead capture","Custom tone of voice","Monthly maintenance and updates"],h:false},
+  {i:"🎯",n:"Support",t:"Best value",p:"2.497",m:"197",d:"Full AI customer support that handles emails and chat automatically — so your team focuses on what matters.",f:["Everything in Chatbot","AI email and chat support","Auto-escalation to your team","HubSpot CRM integration","Monthly reporting"],h:true},
+  {i:"⚡",n:"Automation",t:"Max ROI",p:"4.997",m:"397",d:"Full workflow automation that connects all your tools and eliminates repetitive work completely.",f:["Everything in Support","Full workflow automation","Tool and app integrations","Automatic lead follow-up","Weekly optimisation"],h:false},
+  {i:"🏢",n:"Enterprise",t:"Custom",p:"op aanvraag",m:"",d:"The complete ConneqtAI system built specifically for your business. Everything in one.",f:["Everything in Automation","WhatsApp AI assistant","Custom integrations","Weekly strategy calls","Dedicated account manager"],h:false}
 ];
 export default function PricingCards(){
   return(
