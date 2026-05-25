@@ -1,14 +1,1 @@
-{
-  "rewrites": [
-    {
-      "has": [{ "type": "host", "value": "conneqtai.nl" }],
-      "source": "/(.*)",
-      "destination": "/nl/$1"
-    },
-    {
-      "has": [{ "type": "host", "value": "www.conneqtai.nl" }],
-      "source": "/(.*)",
-      "destination": "/nl/$1"
-    }
-  ]
-}
+{}

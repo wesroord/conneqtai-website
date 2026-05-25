@@ -1,6 +1,8 @@
-import Navbar from "@/components/layout/Navbar";
+import NavbarNL from "@/components/layout/NavbarNL";
 import Footer from "@/components/layout/Footer";
-import PricingHero from "@/components/sections/PricingHero";
-import PricingCards from "@/components/sections/PricingCards";
-import PricingFAQ from "@/components/sections/PricingFAQ";
-export default function PricingPage(){return(<><Navbar/><main style={{paddingTop:"52px"}}><PricingHero/><PricingCards/><PricingFAQ/></main><Footer/></>);}
+import PricingHeroNL from "@/components/sections/nl/PricingHeroNL";
+import PricingCardsNL from "@/components/sections/nl/PricingCardsNL";
+import PricingFAQNL from "@/components/sections/nl/PricingFAQNL";
+export default function PricingPageNL() {
+  return (<><NavbarNL /><main style={{paddingTop:"52px"}}><PricingHeroNL /><PricingCardsNL /><PricingFAQNL /></main><Footer /></>);
+}
