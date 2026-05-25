@@ -32,7 +32,7 @@ export default function CaseStudy(){
           ))}
         </div>
         <div style={{marginTop:"24px",padding:"24px",borderRadius:"14px",border:"1px solid rgba(255,0,170,.2)",background:"rgba(255,0,170,.04)"}}>
-          <p style={{fontSize:"14px",color:"rgba(255,255,255,.8)",lineHeight:1.8,fontStyle:"italic",marginBottom:"16px"}}>The AI chatbot has completely changed how we handle customer communication. We used to stress about missing messages in the evening or on weekends. Now everything is handled automatically — and our customers actually get faster answers than before.</p>
+          <p style={{fontSize:"14px",color:"rgba(255,255,255,.8)",lineHeight:1.8,fontStyle:"italic",marginBottom:"16px"}}>"The AI chatbot has completely changed how we handle customer communication. We used to stress about missing messages in the evening or on weekends. Now everything is handled automatically — and our customers actually get faster answers than before."</p>
           <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
             <div style={{width:"32px",height:"32px",borderRadius:"50%",background:"linear-gradient(135deg,#ff00aa,#7700ff)",display:"flex",alignItems:"center",justifyContent:"center",fontSize:"11px",fontWeight:700,color:"#fff"}}>PT</div>
             <div>
@@ -40,6 +40,16 @@ export default function CaseStudy(){
               <div style={{fontSize:"11px",color:"rgba(255,255,255,.5)"}}>PadelTown</div>
             </div>
           </div>
+        </div>
+        <div style={{marginTop:"24px",padding:"28px 24px",borderRadius:"14px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)",display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:"16px"}}>
+          <div>
+            <div style={{fontSize:"11px",fontWeight:600,letterSpacing:".08em",textTransform:"uppercase",color:"rgba(255,255,255,.4)",marginBottom:"6px"}}>See it live</div>
+            <div style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"4px"}}>The chatbot is live on the PadelTown website</div>
+            <div style={{fontSize:"13px",color:"rgba(255,255,255,.55)"}}>Visit their site and try it yourself — it's the one in the corner.</div>
+          </div>
+          <a href="https://padel-town.nl" target="_blank" rel="noopener noreferrer" style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"12px 22px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",fontFamily:"'Inter',sans-serif",fontSize:"14px",fontWeight:600,flexShrink:0}}>
+            Visit PadelTown →
+          </a>
         </div>
       </div>
     </section>
