@@ -1,14 +1,34 @@
 {
   "rewrites": [
     {
-      "has": [{ "type": "host", "value": "conneqtai.nl" }],
-      "source": "/(.*)",
-      "destination": "/nl/$1"
+      "has": [{"type": "host", "value": "conneqtai.nl"}],
+      "source": "/pricing",
+      "destination": "/nl/pricing"
     },
     {
-      "has": [{ "type": "host", "value": "www.conneqtai.nl" }],
-      "source": "/(.*)",
-      "destination": "/nl/$1"
+      "has": [{"type": "host", "value": "conneqtai.nl"}],
+      "source": "/cases",
+      "destination": "/nl/cases"
+    },
+    {
+      "has": [{"type": "host", "value": "conneqtai.nl"}],
+      "source": "/",
+      "destination": "/nl"
+    },
+    {
+      "has": [{"type": "host", "value": "www.conneqtai.nl"}],
+      "source": "/pricing",
+      "destination": "/nl/pricing"
+    },
+    {
+      "has": [{"type": "host", "value": "www.conneqtai.nl"}],
+      "source": "/cases",
+      "destination": "/nl/cases"
+    },
+    {
+      "has": [{"type": "host", "value": "www.conneqtai.nl"}],
+      "source": "/",
+      "destination": "/nl"
     }
   ]
 }
