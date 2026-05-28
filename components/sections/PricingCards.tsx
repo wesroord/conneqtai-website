@@ -1,9 +1,9 @@
 "use client";
 import { useState } from "react";
 const P=[
-  {i:"🚀",n:"Starter",t:"Most popular",p:"997",m:"165",d:"A smart AI chatbot that works for your business 24/7. Answers questions, captures leads and never sleeps.",f:["AI chatbot on your website","Trained on your business","Lead capture","Custom tone of voice","Basic optimisation","Monthly maintenance"],h:false},
-  {i:"⚡",n:"Growth",t:"Best value",p:"1.997",m:"235",d:"Advanced AI that qualifies leads smarter, handles multiple data sources and keeps improving every month.",f:["Everything in Starter","Advanced AI training on your data","Conversation flows","Smarter lead qualification","Email notifications","Multiple data sources","Monthly optimisation and maintenance"],h:true},
-  {i:"🏢",n:"Pro",t:"Max ROI",p:"3.497",m:"385",d:"The complete AI system with WhatsApp, CRM, appointment scheduling and multilingual support.",f:["Everything in Growth","WhatsApp integration","CRM connections","Appointment scheduler","Multilingual AI chatbot","Conversation analytics and optimisation","Priority support","Monthly optimisation and maintenance"],h:false},
+  {i:"🚀",n:"Starter",t:"Most popular",p:"1.750",m:"225",d:"A smart AI chatbot that works for your business 24/7. Answers questions, captures leads and never sleeps.",f:["AI chatbot on your website","Trained on your business","Lead capture","Custom tone of voice","Basic optimisation","Monthly maintenance"],h:false},
+  {i:"⚡",n:"Growth",t:"Best value",p:"3.750",m:"395",d:"Advanced AI that qualifies leads smarter, handles multiple data sources and keeps improving every month.",f:["Everything in Starter","Advanced AI training on your data","Conversation flows","Smarter lead qualification","Email notifications","Multiple data sources","Monthly optimisation and maintenance"],h:true},
+  {i:"🏢",n:"Pro",t:"Max ROI",p:"6.950",m:"695",d:"The complete AI system with WhatsApp, CRM, appointment scheduling and multilingual support.",f:["Everything in Growth","WhatsApp integration","CRM connections","Appointment scheduler","Multilingual AI chatbot","Conversation analytics and optimisation","Priority support","Monthly optimisation and maintenance"],h:false},
 ];
 export default function PricingCards(){
   const [selected, setSelected] = useState(1);
