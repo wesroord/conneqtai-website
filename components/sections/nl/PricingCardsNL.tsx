@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 const P=[
-  {i:"🚀",n:"Starter",t:"Meest gekozen",p:"1.750",m:"225",d:"Een slimme AI-chatbot die 24/7 voor jouw bedrijf werkt. Beantwoordt vragen, vangt leads op en slaapt nooit.",f:["AI-chatbot op je website","Getraind op jouw bedrijf","Lead capture","Eigen tone of voice","Basis optimalisatie","Maandelijks onderhoud"],h:false},
+  {i:"🚀",n:"Starter",t:"Meest gekozen",p:"1.750",m:"250",d:"Een slimme AI-chatbot die 24/7 voor jouw bedrijf werkt. Beantwoordt vragen, vangt leads op en slaapt nooit.",f:["AI-chatbot op je website","Getraind op jouw bedrijf","Lead capture","Eigen tone of voice","Basis optimalisatie","Maandelijks onderhoud"],h:false},
   {i:"⚡",n:"Growth",t:"Beste waarde",p:"3.750",m:"395",d:"Geavanceerde AI die leads slimmer kwalificeert, meerdere databronnen beheert en elke maand verbetert.",f:["Alles uit Starter","Geavanceerde AI-training op jouw bedrijfsdata","Conversatieflows","Slimmere leadkwalificatie","E-mail notificaties","Meerdere databronnen","Maandelijkse optimalisatie en onderhoud"],h:true},
   {i:"🏢",n:"Pro",t:"Max ROI",p:"6.950",m:"695",d:"Het complete AI-systeem met WhatsApp, CRM, afspraakplanner en meertalige ondersteuning.",f:["Alles uit Growth","WhatsApp integratie","CRM koppelingen","Afspraakplanner","Meertalige AI-chatbot","Conversatie analyses en optimalisatie","Prioriteit support","Maandelijkse optimalisatie en onderhoud"],h:false},
 ];
