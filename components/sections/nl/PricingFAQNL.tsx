@@ -6,7 +6,7 @@ const F=[
   {q:"Zijn de prijzen vast?",a:"De getoonde prijzen zijn vanaf-prijzen. De definitieve prijs hangt af van de omvang en complexiteit van het project. Je krijgt altijd een duidelijke offerte voordat we starten, zodat er geen verrassingen zijn."},
   {q:"Kan ik later upgraden naar een groter pakket?",a:"Absoluut. De meeste klanten starten met Starter en upgraden naar Growth of Pro zodra ze de resultaten zien. De overstap verloopt naadloos."},
   {q:"Met welke tools werkt het?",a:"Ik integreer met HubSpot, Salesforce, Monday, Slack, WhatsApp, e-mailplatforms en honderden andere tools. WhatsApp en CRM zijn inbegrepen vanaf het Pro pakket."},
-  {q:"Zit ik vast aan een contract?",a:"Geen langlopende contracten. De maandelijkse fee is maand-tot-maand opzegbaar. Ik behoud klanten op basis van resultaten, niet contracten."},
+  {q:"Zit ik vast aan een contract?",a:"Geen langlopende contracten. De maandelijkse fee is maand-tot-maand opzegbaar. Ik behoud klanten op basis van resultaten, niet contracten."},{q:"Wat als we niet tevreden zijn met de chatbot?",a:"Ik probeer het altijd eerst op te lossen. Als er iets niet goed is, pas ik de chatbot aan en train ik hem opnieuw totdat hij aan de verwachtingen voldoet. Als je daarna nog steeds niet tevreden bent, bespreken we samen een oplossing. De 50% aanbetaling is niet restitueerbaar omdat die de al gemaakte uren en het werk dekt. Als de chatbot is opgeleverd en beide betalingen zijn gedaan, stopt de maandelijkse fee gewoon bij opzegging."},
 ];
 export default function PricingFAQNL(){
   return(

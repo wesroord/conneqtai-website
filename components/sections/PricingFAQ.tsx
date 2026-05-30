@@ -6,7 +6,7 @@ const F=[
   {q:"Are the prices fixed?",a:"The prices shown are starting prices. The final price depends on the size and complexity of the project. I always provide a clear quote before we start, so there are no surprises."},
   {q:"Can I upgrade my package later?",a:"Absolutely. Most clients start with Starter and upgrade to Growth or Pro once they see the results. The transition is seamless."},
   {q:"What tools does it work with?",a:"I integrate with HubSpot, Salesforce, Monday, Slack, WhatsApp, email platforms and hundreds of other tools. WhatsApp and CRM are included from the Pro package."},
-  {q:"Is there a contract?",a:"No long-term contracts. The monthly fee is month-to-month cancellable. I keep clients because of results, not contracts."},
+  {q:"Is there a contract?",a:"No long-term contracts. The monthly fee is month-to-month cancellable. I keep clients because of results, not contracts."},{q:"What if we are not satisfied with the chatbot?",a:"I always try to solve it first. If something is not right, I will adjust and retrain the chatbot until it meets your expectations. If after that you are still not satisfied, we can discuss a solution together. The 50% deposit is non-refundable as it covers the time and work already invested. If the chatbot has been delivered and both payments have been made, the monthly fee simply stops when you cancel."},
 ];
 export default function PricingFAQ(){
   return(
