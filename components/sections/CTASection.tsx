@@ -35,8 +35,8 @@ export default function CTASection(){
           <div style={{position:"absolute",inset:"-3px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
           <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Get in touch</a>
         </div>
-        <a href="mailto:hello@conneqtai.com" style={{display:"block",fontFamily:"'Inter',sans-serif",fontSize:"10px",color:"rgba(255,0,170,.5)",textDecoration:"none",marginTop:"14px"}}>hello@conneqtai.com</a>
-        <div style={{fontSize:"10px",color:"rgba(255,255,255,.14)",marginTop:"11px",fontFamily:"'Inter',sans-serif"}}>no commitment. no fluff. just results.</div>
+        <a href="mailto:hello@conneqtai.com" style={{display:"block",fontFamily:"'Inter',sans-serif",fontSize:"10px",color:"rgba(255,0,170,.9)",textDecoration:"none",marginTop:"14px"}}>hello@conneqtai.com</a>
+        <div style={{fontSize:"10px",color:"rgba(255,255,255,.55)",marginTop:"11px",fontFamily:"'Inter',sans-serif"}}>no commitment. no fluff. just results.</div>
       </div>
     </section>
   );
