@@ -21,7 +21,7 @@ export default function NavbarNL() {
         </div>
       </nav>
       {open&&(<div style={{position:"fixed",top:"52px",left:0,right:0,zIndex:99,background:"rgba(0,0,5,.99)",backdropFilter:"blur(24px)",borderBottom:"1px solid rgba(255,255,255,.08)",padding:"2rem",display:"flex",flexDirection:"column",gap:"1.5rem"}}>
-        <a href="/pricing" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Prijzen</a>
+        <a href="/waarom" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Waarom</a><a href="/pricing" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Prijzen</a>
         <a href="/projecten" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Projecten</a>
         <a href="mailto:hello@conneqtai.com" onClick={()=>setOpen(false)} style={{fontSize:"13px",fontWeight:700,color:"#fff",textDecoration:"none",padding:"12px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",textAlign:"center" as const}}>Neem contact op</a>
       </div>)}
