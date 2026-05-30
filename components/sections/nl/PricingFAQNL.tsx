@@ -1,6 +1,6 @@
 const F=[
-  {q:"Hoe lang duurt het voordat het live is?",a:"De meeste systemen zijn binnen 2 tot 4 weken na ons eerste gesprek live. Wij regelen alles, jij hoeft alleen toegang te geven tot je content en tools."},
-  {q:"Heb ik technische kennis nodig?",a:"Nul. Wij bouwen, installeren en onderhouden alles. Jij gebruikt het gewoon."},
+  {q:"Hoe lang duurt het voordat het live is?",a:"De meeste systemen zijn binnen 2 tot 4 weken na mijn eerste gesprek live. Ik regel alles, jij hoeft alleen toegang te geven tot je content en tools."},
+  {q:"Heb ik technische kennis nodig?",a:"Nul. Ik bouw, installeren en onderhouden alles. Jij gebruikt het gewoon."},
   {q:"Wat als de AI iets verkeerds zegt?",a:"We trainen elk systeem uitgebreid voor de livegang. Als er na de lancering iets niet klopt, lossen we het binnen 24 uur op. Dat is waarvoor het maandelijkse bedrag is."},
   {q:"Kan ik later upgraden naar een groter pakket?",a:"Absoluut. De meeste klanten starten met Starter en upgraden naar Growth of Pro zodra ze de resultaten zien. Wij maken de overstap naadloos."},
   {q:"Met welke tools werkt het?",a:"We integreren met HubSpot, Salesforce, Monday, Slack, WhatsApp, e-mailplatforms en honderden andere tools. WhatsApp en CRM zijn inbegrepen vanaf het Pro pakket."},

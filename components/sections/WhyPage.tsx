@@ -41,7 +41,7 @@ const C = [
       {icon:"⚡", text:"Responds in under 2 seconds, 24 hours a day, 7 days a week. Never misses a lead."},
       {icon:"📈", text:"Most clients recover their investment within the first month through saved staff time alone."},
       {icon:"🔗", text:"Connects to WhatsApp, CRM, email and booking systems. Everything in one place."},
-      {icon:"🛠️", text:"We build it, we install it, we maintain it. You just watch it work."},
+      {icon:"🛠️", text:"I build it, we install it, we maintain it. You just watch it work."},
     ]
   }
 ];
@@ -116,7 +116,7 @@ export default function WhyPage(){
             <div style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-50%)",width:400,height:200,background:"radial-gradient(ellipse,rgba(255,0,170,.1) 0%,transparent 70%)",pointerEvents:"none"}}/>
             <div style={{position:"relative",zIndex:1}}>
               <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(24px,5vw,36px)",fontWeight:800,color:"#fff",marginBottom:"12px",letterSpacing:"-.02em"}}>Ready to stop losing leads?</h2>
-              <p style={{fontSize:"15px",color:"rgba(255,255,255,.7)",marginBottom:"28px",lineHeight:1.75}}>Drop us a message. Clear plan within 24 hours. No fluff.</p>
+              <p style={{fontSize:"15px",color:"rgba(255,255,255,.7)",marginBottom:"28px",lineHeight:1.75}}>Drop me a message. Clear plan within 24 hours. No fluff.</p>
               <div style={{position:"relative",display:"inline-block"}}>
                 <div style={{position:"absolute",inset:"-3px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
                 <a href="mailto:hello@conneqtai.nl" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Get in touch</a>

@@ -1,9 +1,9 @@
 "use client";
 const steps = [
-  { num: "01", title: "Strategy", desc: "We learn your business inside out. Your products, tone of voice, FAQs and goals. Then we design the chatbot that fits exactly." },
-  { num: "02", title: "Build", desc: "We build your custom AI chatbot from scratch, trained entirely on your data. No templates. Tested before it goes anywhere near your customers." },
-  { num: "03", title: "Launch", desc: "We install the chatbot on your website and connect it to your tools, WhatsApp, CRM or email, depending on your package." },
-  { num: "04", title: "Optimise", desc: "We monitor every conversation, keep improving the chatbot and make sure it keeps delivering results month after month." },
+  { num: "01", title: "Strategy", desc: "I learn your business inside out. Your products, tone of voice, FAQs and goals. Then we design the chatbot that fits exactly." },
+  { num: "02", title: "Build", desc: "I build your custom AI chatbot from scratch, trained entirely on your data. No templates. Tested before it goes anywhere near your customers." },
+  { num: "03", title: "Launch", desc: "I install the chatbot on your website and connect it to your tools, WhatsApp, CRM or email, depending on your package." },
+  { num: "04", title: "Optimise", desc: "I monitor every conversation, keep improving the chatbot and make sure it keeps delivering results month after month." },
 ];
 export default function HowItWorks() {
   return (

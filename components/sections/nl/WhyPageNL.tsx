@@ -41,13 +41,13 @@ const C = [
       {icon:"⚡", text:"Reageert binnen 2 seconden, 24 uur per dag, 7 dagen per week. Mist nooit een lead."},
       {icon:"📈", text:"De meeste klanten verdienen hun investering al in de eerste maand terug door besparing op personeelstijd."},
       {icon:"🔗", text:"Koppelt aan WhatsApp, CRM, e-mail en afspraken systemen. Alles op één plek."},
-      {icon:"🛠️", text:"Wij bouwen het, wij installeren het, wij onderhouden het. Jij kijkt toe hoe het werkt."},
+      {icon:"🛠️", text:"Ik bouw het, wij installeren het, wij onderhouden het. Jij kijkt toe hoe het werkt."},
     ]
   }
 ];
 
 const comparison = [
-  {feature:"Installatie", nothing:"Handmatig", tool:"Zelf doen", conneqt:"Wij regelen alles"},
+  {feature:"Installatie", nothing:"Handmatig", tool:"Zelf doen", conneqt:"Ik regel alles"},
   {feature:"Training op jouw data", nothing:"❌", tool:"⚠️ Beperkt", conneqt:"✅ Volledig"},
   {feature:"Reactietijd", nothing:"Uren", tool:"Direct", conneqt:"Direct"},
   {feature:"24/7 beschikbaar", nothing:"❌", tool:"✅", conneqt:"✅"},
@@ -116,7 +116,7 @@ export default function WhyPageNL(){
             <div style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-50%)",width:400,height:200,background:"radial-gradient(ellipse,rgba(255,0,170,.1) 0%,transparent 70%)",pointerEvents:"none"}}/>
             <div style={{position:"relative",zIndex:1}}>
               <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(24px,5vw,36px)",fontWeight:800,color:"#fff",marginBottom:"12px",letterSpacing:"-.02em"}}>Klaar om te stoppen met leads verliezen?</h2>
-              <p style={{fontSize:"15px",color:"rgba(255,255,255,.7)",marginBottom:"28px",lineHeight:1.75}}>Stuur ons een bericht. Helder plan binnen 24 uur. Geen gedoe.</p>
+              <p style={{fontSize:"15px",color:"rgba(255,255,255,.7)",marginBottom:"28px",lineHeight:1.75}}>Stuur mij een bericht. Helder plan binnen 24 uur. Geen gedoe.</p>
               <div style={{position:"relative",display:"inline-block"}}>
                 <div style={{position:"absolute",inset:"-3px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
                 <a href="mailto:hello@conneqtai.nl" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Neem contact op</a>

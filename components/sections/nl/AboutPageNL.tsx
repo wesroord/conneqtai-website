@@ -4,7 +4,7 @@ export default function AboutPageNL(){
       <section style={{padding:"80px 24px 64px",position:"relative",overflow:"hidden"}}>
         <div style={{position:"absolute",inset:0,background:"radial-gradient(ellipse 100% 80% at 50% 0%,rgba(119,0,255,.18) 0%,transparent 60%),#000005",zIndex:0}}/>
         <div style={{position:"relative",zIndex:2,maxWidth:"900px",margin:"0 auto"}}>
-          <span style={{fontSize:"11px",fontWeight:600,letterSpacing:".12em",textTransform:"uppercase",color:"#ff00aa",display:"block",marginBottom:"16px"}}>Over ons</span>
+          <span style={{fontSize:"11px",fontWeight:600,letterSpacing:".12em",textTransform:"uppercase",color:"#ff00aa",display:"block",marginBottom:"16px"}}>Over mij</span>
           <h1 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(32px,6vw,52px)",fontWeight:800,letterSpacing:"-.02em",lineHeight:1.1,color:"#fff",marginBottom:"24px"}}>Gebouwd door iemand die<br/><span className="chrome">AI elke dag gebruikt.</span></h1>
 
           <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(min(100%,420px),1fr))",gap:"48px",marginTop:"48px",alignItems:"start"}}>
@@ -54,11 +54,11 @@ export default function AboutPageNL(){
             <div style={{position:"absolute",top:"50%",left:"50%",transform:"translate(-50%,-50%)",width:400,height:200,background:"radial-gradient(ellipse,rgba(255,0,170,.1) 0%,transparent 70%)",pointerEvents:"none"}}/>
             <div style={{position:"relative",zIndex:1}}>
               <div style={{fontSize:"48px",marginBottom:"16px"}}>🎯</div>
-              <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(22px,4vw,32px)",fontWeight:800,color:"#fff",marginBottom:"16px",letterSpacing:"-.02em"}}>Onze missie</h2>
-              <p style={{fontSize:"16px",color:"rgba(255,255,255,.8)",lineHeight:1.85,maxWidth:"600px",margin:"0 auto 32px"}}>Elk bedrijf verdient een chatbot die echt werkt. Geen generiek template. Geen tool die je zelf moet uitzoeken. Een echt AI systeem, gebouwd op jouw data, getraind in jouw stem, werkend voor jouw klanten 24 uur per dag. Wij bestaan om dat toegankelijk te maken voor elk ambitieus bedrijf, ongeacht de grootte.</p>
+              <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(22px,4vw,32px)",fontWeight:800,color:"#fff",marginBottom:"16px",letterSpacing:"-.02em"}}>Mijn missie</h2>
+              <p style={{fontSize:"16px",color:"rgba(255,255,255,.8)",lineHeight:1.85,maxWidth:"600px",margin:"0 auto 32px"}}>Elk bedrijf verdient een chatbot die echt werkt. Geen generiek template. Geen tool die je zelf moet uitzoeken. Een echt AI systeem, gebouwd op jouw data, getraind in jouw stem, werkend voor jouw klanten 24 uur per dag. Ik besta om dat toegankelijk te maken voor elk ambitieus bedrijf, ongeacht de grootte.</p>
               <div style={{position:"relative",display:"inline-block"}}>
                 <div style={{position:"absolute",inset:"-3px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
-                <a href="mailto:hello@conneqtai.nl" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Werk met mij samen</a>
+                <a href="mailto:hello@conneqtai.nl" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Werk met mij</a>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 const F=[
-  {q:"How long does it take to go live?",a:"Most systems are live within 2 to 4 weeks from our first conversation. We handle everything, you just need to give us access to your content and tools."},
-  {q:"Do I need technical knowledge?",a:"Zero. We build, install and maintain everything. You just use it."},
-  {q:"What if the AI says something wrong?",a:"We train every system extensively before launch. If something is wrong after launch, we fix it within 24 hours. That is what the monthly fee is for."},
+  {q:"How long does it take to go live?",a:"Most systems are live within 2 to 4 weeks from our first conversation. I handle everything, you just need to give us access to your content and tools."},
+  {q:"Do I need technical knowledge?",a:"Zero. I build, install and maintain everything. You just use it."},
+  {q:"What if the AI says something wrong?",a:"I train every system extensively before launch. If something is wrong after launch, we fix it within 24 hours. That is what the monthly fee is for."},
   {q:"Can I upgrade my package later?",a:"Absolutely. Most clients start with Starter and upgrade to Growth or Pro once they see the results. We make the transition seamless."},
   {q:"What tools does it work with?",a:"We integrate with HubSpot, Salesforce, Monday, Slack, WhatsApp, email platforms and hundreds of other tools. WhatsApp and CRM are included from the Pro package."},
   {q:"Is there a contract?",a:"No long-term contracts. The monthly fee is month-to-month. We keep clients because of results, not contracts."}

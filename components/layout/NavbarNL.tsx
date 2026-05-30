@@ -16,7 +16,7 @@ export default function NavbarNL() {
             <a href="/waarom" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Waarom ConneqtAI</a>
             <a href="/pricing" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Prijzen</a>
             <a href="/projecten" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Projecten</a>
-            <a href="/over-ons" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Over ons</a>
+            <a href="/over-mij" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Over mij</a>
           </div>
           <a href="mailto:hello@conneqtai.nl" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:600,padding:"9px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none"}}>Neem contact op</a>
           <button onClick={()=>setOpen(!open)} className="hamburger" style={{display:"none",background:"none",border:"none",cursor:"pointer",color:"#fff",fontSize:"1.3rem"}}>{open?"✕":"☰"}</button>
@@ -26,7 +26,7 @@ export default function NavbarNL() {
         <a href="/waarom" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Waarom ConneqtAI</a>
         <a href="/pricing" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Prijzen</a>
         <a href="/projecten" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Projecten</a>
-        <a href="/over-ons" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Over ons</a>
+        <a href="/over-mij" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Over mij</a>
         <a href="mailto:hello@conneqtai.nl" onClick={()=>setOpen(false)} style={{fontSize:"13px",fontWeight:700,color:"#fff",textDecoration:"none",padding:"12px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",textAlign:"center" as const}}>Neem contact op</a>
       </div>)}
       <style>{".desktop-nav{display:flex!important}.hamburger{display:none!important}@media(max-width:768px){.desktop-nav{display:none!important}.hamburger{display:flex!important}}"}</style>

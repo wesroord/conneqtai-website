@@ -2,7 +2,7 @@
 import { useState } from "react";
 const REPLIES=["Everything 100% custom. Your data, your tone, your brand. No templates ever.","Most clients go live in 2 to 4 weeks. Want us to map out what we would build for you?","Email hello@conneqtai.com and we reply within 24 hours with a clear plan.","Most clients save 60% on support costs within the first month."];
 export default function DemoSection(){
-  const [msgs,setMsgs]=useState([{r:"bot",t:"Hey! I am your AI chatbot. Ask me anything about pricing, timelines or what we build."},{r:"user",t:"What exactly does ConneqtAI build?"},{r:"bot",t:"We specialise in one thing: custom AI chatbots.\n\nFrom a simple chatbot that answers questions and captures leads, to a fully integrated system with WhatsApp, CRM and appointment scheduling.\n\nThree packages. One goal: results for your business."}]);
+  const [msgs,setMsgs]=useState([{r:"bot",t:"Hey! I am your AI chatbot. Ask me anything about pricing, timelines or what we build."},{r:"user",t:"What exactly does ConneqtAI build?"},{r:"bot",t:"I specialise in one thing: custom AI chatbots.\n\nFrom a simple chatbot that answers questions and captures leads, to a fully integrated system with WhatsApp, CRM and appointment scheduling.\n\nThree packages. One goal: results for your business."}]);
   const [input,setInput]=useState("");
   const [ri,setRi]=useState(0);
   const send=()=>{const t=input.trim();if(!t)return;setInput("");setMsgs(p=>[...p,{r:"user",t}]);setTimeout(()=>{setMsgs(p=>[...p,{r:"bot",t:REPLIES[ri%REPLIES.length]}]);setRi(r=>r+1)},900);};

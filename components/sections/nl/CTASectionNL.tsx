@@ -30,7 +30,7 @@ export default function CTASectionNL(){
       <div style={{position:"relative",zIndex:2}}>
         <span style={{fontFamily:"'Inter',sans-serif",fontSize:"9px",letterSpacing:".2em",textTransform:"uppercase",color:"rgba(255,0,170,.5)",marginBottom:"14px",display:"block"}}>aan de slag</span>
         <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(26px,6.5vw,42px)",fontWeight:800,letterSpacing:"-.04em",lineHeight:1.04,marginBottom:"12px",color:"#fff"}}>Jouw bedrijf verdient<br/><span className="chrome">een chatbot die echt werkt.</span></h2>
-        <p style={{fontSize:"13px",color:"rgba(255,255,255,.7)",marginBottom:"26px",maxWidth:"280px",marginLeft:"auto",marginRight:"auto",lineHeight:1.75}}>Stuur ons een bericht. Helder plan binnen 24 uur. Geen gedoe.</p>
+        <p style={{fontSize:"13px",color:"rgba(255,255,255,.7)",marginBottom:"26px",maxWidth:"280px",marginLeft:"auto",marginRight:"auto",lineHeight:1.75}}>Stuur mij een bericht. Helder plan binnen 24 uur. Geen gedoe.</p>
         <div style={{position:"relative",display:"inline-block"}}>
           <div style={{position:"absolute",inset:"-3px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
           <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Neem contact op</a>
