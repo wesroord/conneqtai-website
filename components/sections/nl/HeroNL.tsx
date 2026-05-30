@@ -43,7 +43,7 @@ export default function HeroNL() {
         <p style={{fontSize:"clamp(14px,2vw,16px)",color:"rgba(255,255,255,.6)",maxWidth:"480px",lineHeight:1.75,margin:"0 auto 28px",fontWeight:400,animation:"fup3 .8s ease .2s both"}}>
           Wij bouwen <strong style={{color:"rgba(255,255,255,.85)",fontWeight:600}}>maatwerk AI chatbots</strong> die bezoekers aanspreken, leads opvangen en klanten converteren, 24/7. Van een simpele chatbot tot een volledig geïntegreerd AI systeem.
         </p>
-        <div style={{display:"flex",gap:"12px",justifyContent:"center",flexWrap:"wrap",marginBottom:"36px",animation:"fup3 .8s ease .25s both"}}>
+        <div style={{display:"flex",flexDirection:"column",alignItems:"center",gap:"12px",marginBottom:"36px",animation:"fup3 .8s ease .25s both"}}>
           <div style={{position:"relative",display:"inline-block"}}>
             <div style={{position:"absolute",inset:"-3px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.6}} />
             <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"15px",fontWeight:600,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Ontvang jouw chatbot</a>
