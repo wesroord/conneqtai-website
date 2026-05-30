@@ -59,46 +59,30 @@ export default function ComingSoon({ lang = "en" }: { lang?: string }) {
       <canvas ref={ref} style={{position:"absolute",inset:0,width:"100%",height:"100%",pointerEvents:"none"}}/>
       <div style={{position:"absolute",width:"500px",height:"500px",background:"radial-gradient(circle,rgba(119,0,255,.2),transparent 70%)",top:"-150px",left:"-150px",borderRadius:"50%",filter:"blur(80px)",animation:"aMove 12s ease-in-out infinite"}}/>
       <div style={{position:"absolute",width:"400px",height:"400px",background:"radial-gradient(circle,rgba(255,0,170,.15),transparent 70%)",bottom:"-100px",right:"-100px",borderRadius:"50%",filter:"blur(80px)",animation:"aMove2 10s ease-in-out infinite"}}/>
-
       <div style={{position:"relative",zIndex:2,textAlign:"center",padding:"24px",maxWidth:"600px",width:"100%"}}>
         <div style={{fontFamily:"'Inter',sans-serif",fontSize:"24px",fontWeight:800,letterSpacing:"-.02em",marginBottom:"48px"}}>
           <span style={{color:"#fff"}}>Conneqt</span>
           <span style={{background:"linear-gradient(90deg,#ff00aa,#7700ff,#00aaff)",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>AI</span>
         </div>
-
         <div style={{display:"inline-flex",alignItems:"center",gap:"8px",padding:"6px 16px",borderRadius:"100px",border:"1px solid rgba(255,0,170,.3)",background:"rgba(255,0,170,.06)",marginBottom:"28px"}}>
           <span style={{width:"6px",height:"6px",borderRadius:"50%",background:"#ff00aa",display:"inline-block",animation:"nbp 1.5s ease infinite"}}/>
           <span style={{fontFamily:"'Inter',sans-serif",fontSize:"11px",letterSpacing:".12em",textTransform:"uppercase" as const,color:"rgba(255,0,170,.8)",fontWeight:600}}>
             {nl ? "Binnenkort beschikbaar" : "Coming soon"}
           </span>
         </div>
-
         <h1 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(36px,8vw,72px)",fontWeight:800,letterSpacing:"-.03em",lineHeight:1.05,color:"#fff",marginBottom:"20px"}}>
           {nl ? "Iets groots" : "Something big"}<br/>
           <span style={{background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",backgroundSize:"300% auto",WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent",animation:"chromeShift 4s ease infinite"}}>
             {nl ? "is onderweg." : "is coming."}
           </span>
         </h1>
-
         <p style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(15px,2vw,18px)",color:"rgba(255,255,255,.6)",lineHeight:1.75,maxWidth:"460px",margin:"0 auto 40px"}}>
-          {nl
-            ? "Wij bouwen maatwerk AI chatbots die jouw bedrijf 24/7 laten werken. De website wordt binnenkort gelanceerd."
-            : "We build custom AI chatbots that keep your business running 24/7. The website launches soon."}
+          {nl ? "Wij bouwen maatwerk AI chatbots die jouw bedrijf 24/7 laten werken. De website wordt binnenkort gelanceerd." : "We build custom AI chatbots that keep your business running 24/7. The website launches soon."}
         </p>
-
         {!sent ? (
           <div style={{display:"flex",gap:"10px",justifyContent:"center",flexWrap:"wrap",marginBottom:"40px"}}>
-            <input
-              value={email}
-              onChange={e=>setEmail(e.target.value)}
-              placeholder={nl ? "Jouw e-mailadres" : "Your email address"}
-              style={{padding:"14px 20px",borderRadius:"10px",border:"1px solid rgba(255,255,255,.12)",background:"rgba(255,255,255,.05)",color:"#fff",fontSize:"14px",fontFamily:"'Inter',sans-serif",outline:"none",width:"260px",maxWidth:"100%"}}
-            />
-            
-              href={`mailto:hello@conneqtai.com?subject=${nl ? "Houd mij op de hoogte" : "Keep me posted"}&body=${email}`}
-              onClick={()=>setSent(true)}
-              style={{padding:"14px 24px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",fontSize:"14px",fontWeight:600,fontFamily:"'Inter',sans-serif",display:"inline-block"}}
-            >
+            <input value={email} onChange={e=>setEmail(e.target.value)} placeholder={nl ? "Jouw e-mailadres" : "Your email address"} style={{padding:"14px 20px",borderRadius:"10px",border:"1px solid rgba(255,255,255,.12)",background:"rgba(255,255,255,.05)",color:"#fff",fontSize:"14px",fontFamily:"'Inter',sans-serif",outline:"none",width:"260px",maxWidth:"100%"}}/>
+            <a href={"mailto:hello@conneqtai.com?subject="+(nl?"Houd mij op de hoogte":"Keep me posted")+"&body="+email} onClick={()=>setSent(true)} style={{padding:"14px 24px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",fontSize:"14px",fontWeight:600,fontFamily:"'Inter',sans-serif",display:"inline-block"}}>
               {nl ? "Houd mij op de hoogte" : "Notify me"}
             </a>
           </div>
@@ -109,7 +93,6 @@ export default function ComingSoon({ lang = "en" }: { lang?: string }) {
             </span>
           </div>
         )}
-
         <div style={{display:"flex",alignItems:"center",justifyContent:"center",gap:"20px",flexWrap:"wrap"}}>
           <a href="mailto:hello@conneqtai.com" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",color:"rgba(255,255,255,.4)",textDecoration:"none"}}>hello@conneqtai.com</a>
           <span style={{color:"rgba(255,255,255,.15)"}}>·</span>
