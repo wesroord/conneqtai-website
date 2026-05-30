@@ -41,7 +41,7 @@ const C = [
       {icon:"⚡", text:"Reageert binnen 2 seconden, 24 uur per dag, 7 dagen per week. Mist nooit een lead."},
       {icon:"📈", text:"De meeste klanten verdienen hun investering al in de eerste maand terug door besparing op personeelstijd."},
       {icon:"🔗", text:"Koppelt aan WhatsApp, CRM, e-mail en afspraken systemen. Alles op één plek."},
-      {icon:"🛠️", text:"Ik bouw het, wij installeren het, wij onderhouden het. Jij kijkt toe hoe het werkt."},
+      {icon:"🛠️", text:"Ik bouw het, installeer het en onderhoud het. Jij kijkt toe hoe het werkt."},
     ]
   }
 ];
@@ -94,22 +94,25 @@ export default function WhyPageNL(){
 
           <div style={{marginBottom:"64px"}}>
             <h2 style={{fontFamily:"'Inter',sans-serif",fontSize:"clamp(22px,4vw,32px)",fontWeight:800,color:"#fff",marginBottom:"32px",textAlign:"center",letterSpacing:"-.02em"}}>Vergelijking op een rij</h2>
-            <div style={{borderRadius:"16px",overflow:"hidden",border:"1px solid rgba(255,255,255,.08)"}}>
-              <div style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",background:"rgba(255,255,255,.04)",padding:"14px 20px",gap:"8px"}}>
-                <div style={{fontSize:"11px",fontWeight:700,color:"rgba(255,255,255,.4)",textTransform:"uppercase",letterSpacing:".08em"}}>Onderdeel</div>
-                <div style={{fontSize:"11px",fontWeight:700,color:"rgba(255,60,60,.8)",textTransform:"uppercase",letterSpacing:".08em",textAlign:"center"}}>Niets</div>
-                <div style={{fontSize:"11px",fontWeight:700,color:"rgba(255,180,0,.8)",textTransform:"uppercase",letterSpacing:".08em",textAlign:"center"}}>Standaard tool</div>
-                <div style={{fontSize:"11px",fontWeight:700,color:"#ff00aa",textTransform:"uppercase",letterSpacing:".08em",textAlign:"center"}}>ConneqtAI</div>
-              </div>
-              {comparison.map((row,i)=>(
-                <div key={row.feature} style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",padding:"14px 20px",gap:"8px",background:i%2===0?"#000005":"rgba(255,255,255,.02)",borderTop:"1px solid rgba(255,255,255,.05)"}}>
-                  <div style={{fontSize:"13px",color:"rgba(255,255,255,.8)",fontWeight:500}}>{row.feature}</div>
-                  <div style={{fontSize:"12px",color:"rgba(255,100,100,.8)",textAlign:"center"}}>{row.nothing}</div>
-                  <div style={{fontSize:"12px",color:"rgba(255,200,50,.8)",textAlign:"center"}}>{row.tool}</div>
-                  <div style={{fontSize:"12px",color:"rgba(255,0,170,.9)",textAlign:"center",fontWeight:600}}>{row.conneqt}</div>
+            <div style={{overflowX:"auto",WebkitOverflowScrolling:"touch" as any}}>
+              <div style={{borderRadius:"16px",overflow:"hidden",border:"1px solid rgba(255,255,255,.08)",minWidth:"560px"}}>
+                <div style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",background:"rgba(255,255,255,.04)",padding:"14px 20px",gap:"8px"}}>
+                  <div style={{fontSize:"11px",fontWeight:700,color:"rgba(255,255,255,.4)",textTransform:"uppercase",letterSpacing:".08em"}}>Onderdeel</div>
+                  <div style={{fontSize:"11px",fontWeight:700,color:"rgba(255,60,60,.8)",textTransform:"uppercase",letterSpacing:".08em",textAlign:"center" as const}}>Niets</div>
+                  <div style={{fontSize:"11px",fontWeight:700,color:"rgba(255,180,0,.8)",textTransform:"uppercase",letterSpacing:".08em",textAlign:"center" as const}}>Standaard</div>
+                  <div style={{fontSize:"11px",fontWeight:700,color:"#ff00aa",textTransform:"uppercase",letterSpacing:".08em",textAlign:"center" as const}}>ConneqtAI</div>
                 </div>
-              ))}
+                {comparison.map((row,i)=>(
+                  <div key={row.feature} style={{display:"grid",gridTemplateColumns:"2fr 1fr 1fr 1fr",padding:"14px 20px",gap:"8px",background:i%2===0?"#000005":"rgba(255,255,255,.02)",borderTop:"1px solid rgba(255,255,255,.05)"}}>
+                    <div style={{fontSize:"13px",color:"rgba(255,255,255,.8)",fontWeight:500}}>{row.feature}</div>
+                    <div style={{fontSize:"12px",color:"rgba(255,100,100,.8)",textAlign:"center" as const}}>{row.nothing}</div>
+                    <div style={{fontSize:"12px",color:"rgba(255,200,50,.8)",textAlign:"center" as const}}>{row.tool}</div>
+                    <div style={{fontSize:"12px",color:"rgba(255,0,170,.9)",textAlign:"center" as const,fontWeight:600}}>{row.conneqt}</div>
+                  </div>
+                ))}
+              </div>
             </div>
+            <p style={{textAlign:"center",fontSize:"11px",color:"rgba(255,255,255,.3)",marginTop:"8px"}}>← Scroll om de hele tabel te zien →</p>
           </div>
 
           <div style={{textAlign:"center",padding:"48px 24px",borderRadius:"20px",border:"1px solid rgba(255,0,170,.2)",background:"rgba(255,0,170,.04)",position:"relative",overflow:"hidden"}}>
