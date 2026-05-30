@@ -3,6 +3,10 @@ import { useState, useRef, useEffect } from "react";
 
 const KB: {keys: string[], answer: string}[] = [
   {
+    keys: ["project","projects","made","built","client","clients","case","cases","result","results","reference","example","work","portfolio"],
+    answer: "So far I have completed the following projects:\n\n🏓 PadelTown (2024)\nAn AI chatbot for this padel sports club. The chatbot handles 85% of all customer questions automatically.\n\nResults:\n✓ 340+ questions automated per month\n✓ 28 hours of staff time saved per week\n✓ 3x faster response time\n✓ €2,100 saved in staff costs per month\n\nLive at padel-town.nl.\n\nMore projects coming soon. Will you be next?"
+  },
+  {
     keys: ["price","pricing","cost","costs","package","packages","starter","growth","pro","investment","month","one-time"],
     answer: "I have three packages:\n\n🚀 Starter — €1,750 one-time + €250/month\nAI chatbot on your website, trained on your business, lead capture, custom tone of voice and monthly maintenance.\n\n⚡ Growth — €3,750 one-time + €395/month\nEverything in Starter plus advanced AI training, conversation flows, smarter lead qualification, email notifications and multiple data sources.\n\n🏢 Pro — €6,950 one-time + €695/month\nEverything in Growth plus WhatsApp integration, CRM connection, appointment scheduler, multilingual chatbot and priority support.\n\nAll prices are excluding VAT and starting prices. No long-term contract."
   },

@@ -3,6 +3,10 @@ import { useState, useRef, useEffect } from "react";
 
 const KB: {keys: string[], answer: string}[] = [
   {
+    keys: ["project","projecten","gemaakt","klant","klanten","case","cases","resultaat","resultaten","referentie","voorbeeld","werk","portfolio"],
+    answer: "Tot nu toe heb ik de volgende projecten gerealiseerd:\n\n🏓 PadelTown (2024)\nEen AI chatbot voor deze padelsportclub. De chatbot handelt 85% van alle klantvragen automatisch af.\n\nResultaten:\n✓ 340+ vragen per maand geautomatiseerd\n✓ 28 uur personeelstijd bespaard per week\n✓ 3x snellere reactietijd\n✓ €2.100 bespaard op personeelskosten per maand\n\nLive te zien op padel-town.nl.\n\nMeer projecten volgen binnenkort. Ben jij de volgende?"
+  },
+  {
     keys: ["prijs","prijzen","kost","kosten","pakket","pakketten","starter","growth","pro","investering","maand","eenmalig"],
     answer: "Ik heb drie pakketten:\n\n🚀 Starter — €1.750 eenmalig + €250/maand\nAI chatbot op je website, getraind op jouw bedrijf, lead capture, eigen tone of voice en maandelijks onderhoud.\n\n⚡ Growth — €3.750 eenmalig + €395/maand\nAlles uit Starter plus geavanceerde AI training, conversatieflows, slimmere leadkwalificatie, e-mail notificaties en meerdere databronnen.\n\n🏢 Pro — €6.950 eenmalig + €695/maand\nAlles uit Growth plus WhatsApp integratie, CRM koppeling, afspraakplanner, meertalige chatbot en prioriteit support.\n\nAlle prijzen zijn exclusief btw en vanaf-prijzen. Geen langlopend contract."
   },
