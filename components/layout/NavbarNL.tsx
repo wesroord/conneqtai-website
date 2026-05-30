@@ -13,7 +13,7 @@ export default function NavbarNL() {
         </a>
         <div style={{display:"flex",alignItems:"center",gap:"20px"}}>
           <div className="desktop-nav" style={{display:"flex",alignItems:"center",gap:"24px"}}>
-            <a href="/waarom" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Waarom</a><a href="/pricing" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Prijzen</a>
+            <a href="/waarom" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Waarom ConneqtAI</a><a href="/pricing" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Prijzen</a>
             <a href="/projecten" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Projecten</a>
           </div>
           <a href="mailto:hello@conneqtai.com" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:600,padding:"9px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none"}}>Neem contact op</a>
@@ -21,7 +21,7 @@ export default function NavbarNL() {
         </div>
       </nav>
       {open&&(<div style={{position:"fixed",top:"52px",left:0,right:0,zIndex:99,background:"rgba(0,0,5,.99)",backdropFilter:"blur(24px)",borderBottom:"1px solid rgba(255,255,255,.08)",padding:"2rem",display:"flex",flexDirection:"column",gap:"1.5rem"}}>
-        <a href="/waarom" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Waarom</a><a href="/pricing" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Prijzen</a>
+        <a href="/waarom" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Waarom ConneqtAI</a><a href="/pricing" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Prijzen</a>
         <a href="/projecten" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Projecten</a>
         <a href="mailto:hello@conneqtai.com" onClick={()=>setOpen(false)} style={{fontSize:"13px",fontWeight:700,color:"#fff",textDecoration:"none",padding:"12px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",textAlign:"center" as const}}>Neem contact op</a>
       </div>)}
