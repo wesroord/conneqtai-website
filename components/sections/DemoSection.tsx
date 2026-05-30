@@ -8,7 +8,7 @@ const KB: {keys: string[], answer: string}[] = [
   },
   {
     keys: ["price","pricing","cost","costs","package","packages","starter","growth","pro","investment","month","one-time"],
-    answer: "I have three packages:\n\n🚀 Starter — €1,750 one-time + €250/month\nAI chatbot on your website, trained on your business, lead capture, custom tone of voice and monthly maintenance.\n\n⚡ Growth — €3,750 one-time + €395/month\nEverything in Starter plus advanced AI training, conversation flows, smarter lead qualification, email notifications and multiple data sources.\n\n🏢 Pro — €6,950 one-time + €695/month\nEverything in Growth plus WhatsApp integration, CRM connection, appointment scheduler, multilingual chatbot and priority support.\n\nAll prices are excluding VAT and starting prices. No long-term contract."
+    answer: "I have three packages:\n\n🚀 Starter — €1,750 one-time + €375/month\nAI chatbot on your website, trained on your business, lead capture, custom tone of voice and monthly maintenance.\n\n⚡ Growth — €3,750 one-time + €595/month\nEverything in Starter plus advanced AI training, conversation flows, smarter lead qualification, email notifications and multiple data sources.\n\n🏢 Pro — €7,950 one-time + €895/month\nEverything in Growth plus WhatsApp integration, CRM connection, appointment scheduler, multilingual chatbot and priority support.\n\nAll prices are excluding VAT and starting prices. No long-term contract."
   },
   {
     keys: ["whatsapp","whats app"],

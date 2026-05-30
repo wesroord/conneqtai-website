@@ -8,7 +8,7 @@ const KB: {keys: string[], answer: string}[] = [
   },
   {
     keys: ["prijs","prijzen","kost","kosten","pakket","pakketten","starter","growth","pro","investering","maand","eenmalig"],
-    answer: "Ik heb drie pakketten:\n\n🚀 Starter — €1.750 eenmalig + €250/maand\nAI chatbot op je website, getraind op jouw bedrijf, lead capture, eigen tone of voice en maandelijks onderhoud.\n\n⚡ Growth — €3.750 eenmalig + €395/maand\nAlles uit Starter plus geavanceerde AI training, conversatieflows, slimmere leadkwalificatie, e-mail notificaties en meerdere databronnen.\n\n🏢 Pro — €6.950 eenmalig + €695/maand\nAlles uit Growth plus WhatsApp integratie, CRM koppeling, afspraakplanner, meertalige chatbot en prioriteit support.\n\nAlle prijzen zijn exclusief btw en vanaf-prijzen. Geen langlopend contract."
+    answer: "Ik heb drie pakketten:\n\n🚀 Starter — €1.750 eenmalig + €375/maand\nAI chatbot op je website, getraind op jouw bedrijf, lead capture, eigen tone of voice en maandelijks onderhoud.\n\n⚡ Growth — €3.750 eenmalig + €595/maand\nAlles uit Starter plus geavanceerde AI training, conversatieflows, slimmere leadkwalificatie, e-mail notificaties en meerdere databronnen.\n\n🏢 Pro — €7.950 eenmalig + €895/maand\nAlles uit Growth plus WhatsApp integratie, CRM koppeling, afspraakplanner, meertalige chatbot en prioriteit support.\n\nAlle prijzen zijn exclusief btw en vanaf-prijzen. Geen langlopend contract."
   },
   {
     keys: ["whatsapp","whats app"],
