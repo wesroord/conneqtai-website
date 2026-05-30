@@ -79,7 +79,7 @@ export default function DemoSection(){
     {r:"bot",t:"I specialise in one thing: custom AI chatbots.\n\nFrom a simple chatbot that answers questions and captures leads, to a fully integrated system with WhatsApp, CRM and appointment scheduling.\n\nThree packages. One goal: results for your business."}
   ]);
   const [input,setInput]=useState("");
-  const chatRef = useRef<HTMLDivElement>(null);
+  const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => { if (msgs.length <= 3) return;
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });

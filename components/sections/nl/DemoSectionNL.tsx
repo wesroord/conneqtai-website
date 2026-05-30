@@ -79,7 +79,7 @@ export default function DemoSectionNL(){
     {r:"bot",t:"Ik ben gespecialiseerd in één ding: maatwerk AI chatbots.\n\nVan een simpele chatbot die vragen beantwoordt en leads opvangt, tot een volledig geïntegreerd systeem met WhatsApp, CRM en afspraakplanner.\n\nDrie pakketten. Één doel: resultaat voor jouw bedrijf."}
   ]);
   const [input,setInput]=useState("");
-  const chatRef = useRef<HTMLDivElement>(null);
+  const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => { if (msgs.length <= 3) return;
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
