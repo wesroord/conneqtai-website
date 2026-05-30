@@ -81,7 +81,7 @@ export default function DemoSection(){
   const [input,setInput]=useState("");
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  useEffect(() => { if (msgs.length <= 3) return;
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [msgs]);
 
