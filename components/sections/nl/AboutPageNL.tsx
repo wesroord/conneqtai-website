@@ -37,7 +37,7 @@ export default function AboutPageNL(){
               </div>
               <div style={{padding:"28px",borderRadius:"16px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
                 <h3 style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"12px"}}>De eerste klanten</h3>
-                <p style={{fontSize:"14px",color:"rgba(255,255,255,.7)",lineHeight:1.8}}>Ik begon wat ik bouwde toe te passen bij bedrijven uit mijn omgeving. Gratis. Gewoon om te zien wat er gebeurde. De resultaten waren direct zichtbaar. Ondernemers die verdronken in repetitieve berichten hadden hun avonden opeens terug. Die reactie, dat opluchte gevoel, maakte me duidelijk dat dit een bedrijf moest worden.</p>
+                <p style={{fontSize:"14px",color:"rgba(255,255,255,.7)",lineHeight:1.8}}>Ik begon wat ik bouwde toe te passen bij bedrijven uit mijn omgeving. Gratis. Gewoon om te zien wat er gebeurde. De resultaten waren direct zichtbaar. Ondernemers die dagelijks werden overspoeld met emails, berichten en telefoontjes hoefden dat opeens bijna niet meer te doen. De chatbot pakte het gewoon op. Die reactie maakte me duidelijk: hier zit iets in.</p>
               </div>
               <div style={{padding:"28px",borderRadius:"16px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
                 <h3 style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"12px"}}>Waarom ConneqtAI</h3>
