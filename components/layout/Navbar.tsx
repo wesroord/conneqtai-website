@@ -18,7 +18,7 @@ export default function Navbar() {
             <a href="/cases" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Cases</a>
             <a href="/about" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>About</a>
           </div>
-          <a href="mailto:hello@conneqtai.nl" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:600,padding:"9px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none"}}>Get in touch</a>
+          <a href="mailto:hello@conneqtai.com" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:600,padding:"9px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none"}}>Get in touch</a>
           <button onClick={()=>setOpen(!open)} className="hamburger" style={{display:"none",background:"none",border:"none",cursor:"pointer",color:"#fff",fontSize:"1.3rem"}}>{open?"✕":"☰"}</button>
         </div>
       </nav>
@@ -27,7 +27,7 @@ export default function Navbar() {
         <a href="/pricing" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Pricing</a>
         <a href="/cases" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>Cases</a>
         <a href="/about" onClick={()=>setOpen(false)} style={{fontSize:"14px",color:"#fff",textDecoration:"none",fontWeight:500}}>About</a>
-        <a href="mailto:hello@conneqtai.nl" onClick={()=>setOpen(false)} style={{fontSize:"13px",fontWeight:700,color:"#fff",textDecoration:"none",padding:"12px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",textAlign:"center" as const}}>Get in touch</a>
+        <a href="mailto:hello@conneqtai.com" onClick={()=>setOpen(false)} style={{fontSize:"13px",fontWeight:700,color:"#fff",textDecoration:"none",padding:"12px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",textAlign:"center" as const}}>Get in touch</a>
       </div>)}
       <style>{".desktop-nav{display:flex!important}.hamburger{display:none!important}@media(max-width:768px){.desktop-nav{display:none!important}.hamburger{display:flex!important}}"}</style>
     </>

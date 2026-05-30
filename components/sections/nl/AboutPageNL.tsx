@@ -58,7 +58,7 @@ export default function AboutPageNL(){
               <p style={{fontSize:"16px",color:"rgba(255,255,255,.8)",lineHeight:1.85,maxWidth:"600px",margin:"0 auto 32px"}}>Elk bedrijf verdient een chatbot die echt werkt. Geen generiek template. Geen tool die je zelf moet uitzoeken. Een echt AI systeem, gebouwd op jouw data, getraind in jouw stem, werkend voor jouw klanten 24 uur per dag. Ik besta om dat toegankelijk te maken voor elk ambitieus bedrijf, ongeacht de grootte.</p>
               <div style={{position:"relative",display:"inline-block"}}>
                 <div style={{position:"absolute",inset:"-3px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
-                <a href="mailto:hello@conneqtai.nl" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Werk met mij</a>
+                <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Werk met mij</a>
               </div>
             </div>
           </div>

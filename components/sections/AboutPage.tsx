@@ -58,7 +58,7 @@ export default function AboutPage(){
               <p style={{fontSize:"16px",color:"rgba(255,255,255,.8)",lineHeight:1.85,maxWidth:"600px",margin:"0 auto 32px"}}>Every business deserves a chatbot that actually works. Not a generic template. Not a tool you have to figure out yourself. A real AI system, built on your data, trained in your voice, working for your customers 24 hours a day. I exist to make that accessible to every ambitious business, regardless of size.</p>
               <div style={{position:"relative",display:"inline-block"}}>
                 <div style={{position:"absolute",inset:"-3px",borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff,#00aaff)",zIndex:-1,animation:"glowRot 3s linear infinite",filter:"blur(10px)",opacity:.55}}/>
-                <a href="mailto:hello@conneqtai.nl" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Work with me</a>
+                <a href="mailto:hello@conneqtai.com" style={{position:"relative",padding:"14px 32px",fontSize:"14px",fontWeight:700,borderRadius:"10px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none",display:"inline-block"}}>Work with me</a>
               </div>
             </div>
           </div>
