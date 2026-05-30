@@ -33,7 +33,7 @@ export default function AboutPage(){
             <div style={{display:"flex",flexDirection:"column",gap:"24px"}}>
               <div style={{padding:"28px",borderRadius:"16px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
                 <h3 style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"12px"}}>How it started</h3>
-                <p style={{fontSize:"14px",color:"rgba(255,255,255,.7)",lineHeight:1.8}}>Working as an e-commerce specialist at Sleiderink, I got introduced to AI tools early. What started as curiosity quickly became obsession. I spent my evenings building, testing, breaking and rebuilding AI systems just to understand how far they could go.</p>
+                <p style={{fontSize:"14px",color:"rgba(255,255,255,.7)",lineHeight:1.8}}>Through my work at Sleiderink I got introduced to AI tools early on. It grabbed me straight away. At home I started experimenting, building things and testing them out. I quickly saw how big the impact could be for businesses and knew: I want to do something with this.</p>
               </div>
               <div style={{padding:"28px",borderRadius:"16px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
                 <h3 style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"12px"}}>The first clients</h3>

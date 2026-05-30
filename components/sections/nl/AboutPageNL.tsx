@@ -33,7 +33,7 @@ export default function AboutPageNL(){
             <div style={{display:"flex",flexDirection:"column",gap:"24px"}}>
               <div style={{padding:"28px",borderRadius:"16px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
                 <h3 style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"12px"}}>Hoe het begon</h3>
-                <p style={{fontSize:"14px",color:"rgba(255,255,255,.7)",lineHeight:1.8}}>Als e-commerce specialist bij Sleiderink kwam ik vroeg in aanraking met AI. Wat begon als nieuwsgierigheid werd al snel een obsessie. Ik bracht mijn avonden door met bouwen, testen, stuk maken en opnieuw bouwen, puur om te begrijpen hoe ver AI kon gaan.</p>
+                <p style={{fontSize:"14px",color:"rgba(255,255,255,.7)",lineHeight:1.8}}>Via mijn werk bij Sleiderink raakte ik al vroeg in aanraking met AI tools. Het trok me direct. Thuis begon ik verder te experimenteren, dingen te bouwen en uit te testen. Ik zag al snel hoe groot de impact kon zijn voor bedrijven en wist: hier wil ik wat mee doen.</p>
               </div>
               <div style={{padding:"28px",borderRadius:"16px",border:"1px solid rgba(255,255,255,.08)",background:"rgba(255,255,255,.02)"}}>
                 <h3 style={{fontFamily:"'Inter',sans-serif",fontSize:"16px",fontWeight:700,color:"#fff",marginBottom:"12px"}}>De eerste klanten</h3>
