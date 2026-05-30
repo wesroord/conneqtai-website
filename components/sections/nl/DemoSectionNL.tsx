@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 const KB: {keys: string[], answer: string}[] = [
   {
@@ -79,7 +79,7 @@ export default function DemoSectionNL(){
     {r:"bot",t:"Ik ben gespecialiseerd in één ding: maatwerk AI chatbots.\n\nVan een simpele chatbot die vragen beantwoordt en leads opvangt, tot een volledig geïntegreerd systeem met WhatsApp, CRM en afspraakplanner.\n\nDrie pakketten. Één doel: resultaat voor jouw bedrijf."}
   ]);
   const [input,setInput]=useState("");
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const chatRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => { if (msgs.length <= 3) return;
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -109,9 +109,9 @@ export default function DemoSectionNL(){
               <div style={{fontSize:"9px",color:"#ff00aa",display:"flex",alignItems:"center",gap:"3px",fontFamily:"'Inter',sans-serif"}}><span style={{width:"4px",height:"4px",borderRadius:"50%",background:"#ff00aa",display:"inline-block",animation:"nbp 1.5s ease infinite"}}/>ONLINE</div>
             </div>
           </div>
-          <div style={{padding:"12px",display:"flex",flexDirection:"column",gap:"7px",minHeight:"200px",maxHeight:"320px",overflowY:"auto"}}>
+          <div style={{padding:"12px",display:"flex",flexDirection:"column",gap:"7px",minHeight:"200px",maxHeight:"320px",overflowY:"auto",scrollBehavior:"smooth" as const}}>
             {msgs.map((m,i)=><div key={i} style={{maxWidth:"90%",padding:"8px 11px",borderRadius:"11px",fontSize:"11px",lineHeight:1.6,whiteSpace:"pre-line",...(m.r==="bot"?{background:"rgba(255,0,170,.07)",border:"1px solid rgba(255,0,170,.15)",borderBottomLeftRadius:"3px",alignSelf:"flex-start"}:{background:"rgba(255,255,255,.04)",border:"1px solid rgba(255,255,255,.08)",borderBottomRightRadius:"3px",alignSelf:"flex-end",color:"rgba(255,255,255,.75)"})}}>{m.t}</div>)}
-            <div ref={bottomRef}/>
+            
           </div>
           <div style={{padding:"9px 13px",borderTop:"1px solid rgba(255,255,255,.06)",display:"flex",gap:"7px"}}>
             <input value={input} onChange={e=>setInput(e.target.value)} onKeyDown={e=>e.key==="Enter"&&send()} placeholder="Stel een vraag over prijzen, pakketten, bouwtijd..." style={{flex:1,background:"rgba(255,255,255,.03)",border:"1px solid rgba(255,255,255,.07)",borderRadius:"8px",padding:"7px 10px",fontSize:"11px",color:"#fff",outline:"none",fontFamily:"inherit"}}/>
