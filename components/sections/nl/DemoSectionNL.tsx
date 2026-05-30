@@ -82,7 +82,8 @@ export default function DemoSectionNL(){
   const bottomRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => { if (msgs.length <= 3) return;
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    const el = bottomRef.current;
+    if (el) el.parentElement?.scrollTo({ top: el.parentElement.scrollHeight, behavior: "smooth" });
   }, [msgs]);
 
   const send=()=>{
