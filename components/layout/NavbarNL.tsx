@@ -13,7 +13,7 @@ export default function NavbarNL() {
         </a>
         <div style={{display:"flex",alignItems:"center",gap:"20px"}}>
           <div className="desktop-nav" style={{display:"flex",alignItems:"center",gap:"24px"}}>
-            <a href="/pricing" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Prijzen</a>
+            <a href="/waarom" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Waarom</a><a href="/pricing" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Prijzen</a>
             <a href="/projecten" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:500,color:"rgba(255,255,255,.8)",textDecoration:"none"}}>Projecten</a>
           </div>
           <a href="mailto:hello@conneqtai.com" style={{fontFamily:"'Inter',sans-serif",fontSize:"13px",fontWeight:600,padding:"9px 20px",borderRadius:"8px",background:"linear-gradient(135deg,#ff00aa,#7700ff)",color:"#fff",textDecoration:"none"}}>Neem contact op</a>
