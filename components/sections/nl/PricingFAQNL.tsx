@@ -1,10 +1,12 @@
 const F=[
-  {q:"Hoe lang duurt het voordat het live is?",a:"De meeste systemen zijn binnen 2 tot 4 weken na mijn eerste gesprek live. Ik regel alles, jij hoeft alleen toegang te geven tot je content en tools."},
-  {q:"Heb ik technische kennis nodig?",a:"Nul. Ik bouw, installeren en onderhouden alles. Jij gebruikt het gewoon."},
-  {q:"Wat als de AI iets verkeerds zegt?",a:"We trainen elk systeem uitgebreid voor de livegang. Als er na de lancering iets niet klopt, lossen we het binnen 24 uur op. Dat is waarvoor het maandelijkse bedrag is."},
-  {q:"Kan ik later upgraden naar een groter pakket?",a:"Absoluut. De meeste klanten starten met Starter en upgraden naar Growth of Pro zodra ze de resultaten zien. Wij maken de overstap naadloos."},
-  {q:"Met welke tools werkt het?",a:"We integreren met HubSpot, Salesforce, Monday, Slack, WhatsApp, e-mailplatforms en honderden andere tools. WhatsApp en CRM zijn inbegrepen vanaf het Pro pakket."},
-  {q:"Zit ik vast aan een contract?",a:"Geen langlopende contracten. Het maandelijkse bedrag is maand-tot-maand opzegbaar. We behouden klanten op basis van resultaten, niet contracten."}
+  {q:"Hoe lang duurt het voordat het live is?",a:"De meeste chatbots zijn binnen 2 tot 4 weken na ons eerste gesprek live. Ik regel alles, jij hoeft alleen de benodigde informatie aan te leveren."},
+  {q:"Heb ik technische kennis nodig?",a:"Nul. Ik bouw, installeer en onderhoud alles. Jij gebruikt het gewoon."},
+  {q:"Wat als de chatbot iets verkeerds zegt?",a:"Ik train elk systeem uitgebreid voor de livegang. Als er daarna iets niet klopt, los ik het binnen 24 uur op. Dat is waar de maandelijkse fee voor is."},
+  {q:"Hoe werkt de betaling?",a:"De betaling gaat in twee delen. Je betaalt 50% voor aanvang zodat ik kan starten, en de overige 50% bij oplevering van de chatbot. De maandelijkse fee gaat pas in vanaf de livegang van de chatbot."},
+  {q:"Zijn de prijzen vast?",a:"De getoonde prijzen zijn vanaf-prijzen. De definitieve prijs hangt af van de omvang en complexiteit van het project. Je krijgt altijd een duidelijke offerte voordat we starten, zodat er geen verrassingen zijn."},
+  {q:"Kan ik later upgraden naar een groter pakket?",a:"Absoluut. De meeste klanten starten met Starter en upgraden naar Growth of Pro zodra ze de resultaten zien. De overstap verloopt naadloos."},
+  {q:"Met welke tools werkt het?",a:"Ik integreer met HubSpot, Salesforce, Monday, Slack, WhatsApp, e-mailplatforms en honderden andere tools. WhatsApp en CRM zijn inbegrepen vanaf het Pro pakket."},
+  {q:"Zit ik vast aan een contract?",a:"Geen langlopende contracten. De maandelijkse fee is maand-tot-maand opzegbaar. Ik behoud klanten op basis van resultaten, niet contracten."},
 ];
 export default function PricingFAQNL(){
   return(
