@@ -33,7 +33,7 @@ export default function PricingCardsNL(){
           ))}
         </div>
         <div style={{textAlign:"center",marginTop:"32px",fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.6)"}}>
-          Prijzen zijn vanaf-prijzen en kunnen afwijken afhankelijk van de projectomvang. Er wordt 50% aanbetaald voor aanvang en 50% bij oplevering van de chatbot. Excl. btw.
+          Prijzen zijn vanaf-prijzen en kunnen afwijken afhankelijk van de projectomvang. Er wordt 50% aanbetaald voor aanvang en 50% bij oplevering van de chatbot. De maandelijkse fee gaat in vanaf de livegang. Excl. btw.
         </div>
       </div>
     </section>
