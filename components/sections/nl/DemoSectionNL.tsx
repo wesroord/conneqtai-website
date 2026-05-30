@@ -23,8 +23,8 @@ const KB: {keys: string[], answer: string}[] = [
     answer: "De bouwtijd hangt af van het pakket:\n\n🚀 Starter — 1 tot 2 weken\n⚡ Growth — 2 tot 3 weken\n🏢 Pro — 3 tot 4 weken\n\nDe exacte tijd hangt ook af van hoe snel jij de benodigde informatie aanlevert. Zodra ik alles heb, ga ik direct aan de slag."
   },
   {
-    keys: ["contract","opzeggen","opzeg","vast","verplicht","verplichting"],
-    answer: "Geen langlopend contract. De maandelijkse fee is maand tot maand opzegbaar.\n\nIk behoud klanten op basis van resultaten, niet contracten."
+    keys: ["contract","opzeggen","opzeg","vast","verplicht","verplichting","betaling","betalen","aanbetaling","factuur"],
+    answer: "Geen langlopend contract. De maandelijkse fee is maand tot maand opzegbaar.\n\nBetaling gaat in twee delen:\n✓ 50% aanbetaling voor aanvang\n✓ 50% bij oplevering van de chatbot\n\nDe maandelijkse fee start na de livegang. Ik behoud klanten op basis van resultaten, niet contracten."
   },
   {
     keys: ["technisch","installeren","installatie","code","website","wordpress","webflow"],

@@ -23,8 +23,8 @@ const KB: {keys: string[], answer: string}[] = [
     answer: "The build time depends on the package:\n\n🚀 Starter — 1 to 2 weeks\n⚡ Growth — 2 to 3 weeks\n🏢 Pro — 3 to 4 weeks\n\nThe exact time also depends on how quickly you provide the required information. Once I have everything, I get started straight away."
   },
   {
-    keys: ["contract","cancel","cancellation","commitment","obligation","lock"],
-    answer: "No long-term contract. The monthly fee is month-to-month cancellable.\n\nI keep clients through results, not contracts."
+    keys: ["contract","cancel","cancellation","commitment","obligation","lock","payment","pay","deposit","invoice"],
+    answer: "No long-term contract. The monthly fee is month-to-month cancellable.\n\nPayment is split in two:\n✓ 50% deposit before I start building\n✓ 50% upon delivery of the chatbot\n\nThe monthly fee starts after the chatbot goes live. I keep clients through results, not contracts."
   },
   {
     keys: ["technical","install","installation","code","website","wordpress","webflow"],

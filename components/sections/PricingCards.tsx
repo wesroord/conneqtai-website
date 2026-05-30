@@ -33,7 +33,7 @@ export default function PricingCards(){
           ))}
         </div>
         <div style={{textAlign:"center",marginTop:"32px",fontFamily:"'Inter',sans-serif",fontSize:"12px",color:"rgba(255,255,255,.6)"}}>
-          Prices are indicative and start from the amounts shown. Final pricing depends on project scope. Excl. VAT.
+          Prices start from the amounts shown and may vary depending on project scope. A 50% deposit is required before work begins. The remaining 50% is due upon delivery. Excl. VAT.
         </div>
       </div>
     </section>
